@@ -29,6 +29,8 @@
 	target_items = list(/obj/item/clothing/head/helmet/f13/ncr/rangercombat)
 	result_item = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
 
+/*
+
 /obj/item/modkit/riotgear/fox
 	name = "sniper riot gear modkit"
 	result_item = /obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
@@ -55,7 +57,7 @@
 	target_items = list(/obj/item/clothing/suit/armor/f13/raider)
 	result_item = /obj/item/clothing/suit/armor/f13/shankduster
 
-/*
+
 /obj/item/modkit/custom_excess
 	name = "champion of kanab's armor modkit"
 	target_items = list(/obj/item/clothing/suit/armor/f13/legion/centurion,
@@ -69,7 +71,6 @@
 						/obj/item/clothing/head/helmet/f13/legion/rangercent,
 						/obj/item/clothing/head/helmet/f13/legion/palacent)
 	result_item = /obj/item/clothing/head/helmet/f13/legion/palacent/custom_excess
-*/
 
 /obj/item/modkit/piper_hat
 	name = "gambler's hat modkit"
@@ -111,3 +112,4 @@
 	target_items = list(/obj/item/clothing/suit/armor/f13/combat/ncr_patrol)
 	result_item = /obj/item/clothing/suit/armor/f13/modif_r_vest
 
+*/
