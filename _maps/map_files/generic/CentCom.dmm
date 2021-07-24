@@ -458,8 +458,6 @@
 "by" = (
 /obj/structure/table,
 /obj/item/clothing/head/helmet/thunderdome,
-/obj/item/clothing/suit/armor/tdome/red,
-/obj/item/clothing/under/color/red,
 /obj/item/holo/esword/red,
 /turf/open/floor/holofloor/basalt,
 /area/holodeck/rec_center/thunderdome)
@@ -995,8 +993,6 @@
 /area/holodeck/rec_center/beach)
 "di" = (
 /obj/structure/table,
-/obj/item/clothing/head/helmet/thunderdome,
-/obj/item/clothing/suit/armor/tdome/green,
 /obj/item/clothing/under/color/green,
 /obj/item/holo/esword/green,
 /turf/open/floor/holofloor/basalt,
@@ -1031,8 +1027,6 @@
 /area/holodeck/rec_center/thunderdome1218)
 "dp" = (
 /obj/structure/table/wood/fancy,
-/obj/item/clothing/suit/armor/riot/knight/blue,
-/obj/item/clothing/head/helmet/knight/blue,
 /obj/item/melee/onehanded/machete/forgedmachete,
 /turf/open/floor/holofloor/grass,
 /area/holodeck/rec_center/thunderdome1218)
@@ -1045,8 +1039,6 @@
 /area/holodeck/rec_center/thunderdome1218)
 "dr" = (
 /obj/structure/table/wood/fancy,
-/obj/item/clothing/suit/armor/riot/knight/red,
-/obj/item/clothing/head/helmet/knight/red,
 /obj/item/melee/onehanded/machete/forgedmachete,
 /turf/open/floor/holofloor/grass,
 /area/holodeck/rec_center/thunderdome1218)
@@ -1914,8 +1906,6 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/tdome/red,
-/obj/item/clothing/head/helmet/thunderdome,
 /obj/item/melee/baton/loaded,
 /obj/item/melee/transforming/energy/sword/saber/red,
 /obj/effect/turf_decal/stripes/line{
@@ -1968,8 +1958,7 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/tdome/green,
-/obj/item/clothing/head/helmet/thunderdome,
+
 /obj/item/melee/baton/loaded,
 /obj/item/melee/transforming/energy/sword/saber/green,
 /obj/effect/turf_decal/stripes/line{
@@ -2031,8 +2020,6 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/swat,
 /obj/item/gun/energy/laser,
 /turf/open/floor/plasteel,
 /area/tdome/arena_source)
@@ -2040,8 +2027,6 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/swat,
 /obj/item/gun/energy/laser,
 /turf/open/floor/plasteel,
 /area/tdome/arena_source)
@@ -4861,9 +4846,6 @@
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/neck/stripedredscarf,
 /obj/item/clothing/neck/tie/red,
-/obj/item/clothing/head/helmet/space/beret,
-/obj/item/clothing/suit/curator,
-/obj/item/clothing/suit/space/officer,
 /obj/item/clothing/gloves/fingerless,
 /obj/item/clothing/gloves/color/black,
 /obj/item/clothing/glasses/eyepatch,
@@ -10331,8 +10313,6 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/tdome/red,
-/obj/item/clothing/head/helmet/thunderdome,
 /obj/item/melee/baton/loaded,
 /obj/item/melee/transforming/energy/sword/saber/red,
 /obj/effect/turf_decal/stripes/line{
@@ -10419,8 +10399,6 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/tdome/green,
-/obj/item/clothing/head/helmet/thunderdome,
 /obj/item/melee/baton/loaded,
 /obj/item/melee/transforming/energy/sword/saber/green,
 /obj/effect/turf_decal/stripes/line{
@@ -12138,8 +12116,6 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/swat,
 /obj/item/gun/energy/laser/aer9,
 /turf/open/floor/plasteel,
 /area/tdome/arena)
@@ -12147,8 +12123,6 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/swat,
 /obj/item/gun/energy/laser/aer9,
 /turf/open/floor/plasteel,
 /area/tdome/arena)

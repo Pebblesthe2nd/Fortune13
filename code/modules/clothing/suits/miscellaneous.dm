@@ -31,21 +31,6 @@
 /*
  * Costume
  */
-/obj/item/clothing/suit/hooded/flashsuit
-	name = "flashy costume"
-	desc = "(I) What did you expect?"
-	icon_state = "flashsuit"
-	item_state = "armor"
-	hoodtype = /obj/item/clothing/head/hooded/flashsuit
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
-/obj/item/clothing/head/hooded/flashsuit
-	name = "flash button"
-	desc = "(I) You will learn to fear the flash."
-	icon_state = "flashsuit"
-	body_parts_covered = HEAD
-	flags_inv = HIDEHAIR|HIDEEARS|HIDEFACIALHAIR|HIDEFACE|HIDEMASK
-
 /obj/item/clothing/suit/pirate
 	name = "pirate coat"
 	desc = "(I) Yarr."
@@ -59,7 +44,6 @@
 	item_state = "hgpirate"
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
-
 /obj/item/clothing/suit/cyborg_suit
 	name = "cyborg suit"
 	desc = "(I) Suit for a cyborg costume."
@@ -70,7 +54,6 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS|FEET
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 
-
 /obj/item/clothing/suit/justice
 	name = "justice suit"
 	desc = "(I) this pretty much looks ridiculous" //Needs no fixing
@@ -78,7 +61,6 @@
 	item_state = "justice"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS|FEET
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
-
 
 /obj/item/clothing/suit/judgerobe
 	name = "judge's robe"
@@ -323,15 +305,6 @@
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/suit/armor/navyblue/russian
-	name = "\improper Russian officer's jacket"
-	desc = "(II) This jacket is for those special occasions when a russian officer isn't required to wear their armor."
-	icon_state = "officertanjacket"
-	item_state = "officertanjacket"
-	body_parts_covered = CHEST|ARMS
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	armor = list("tier" = 2)
-
 /obj/item/clothing/suit/ran
 	name = "shikigami costume"
 	desc = "(I) A costume that looks like a certain shikigami, is super fluffy."
@@ -368,21 +341,18 @@
 	desc = "(I) A worn out, curiously comfortable t-shirt with a picture of Ian. You wouldn't go so far as to say it feels like being hugged when you wear it, but it's pretty close. Good for sleeping in."
 	icon_state = "ianshirt"
 	item_state = "ianshirt"
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/nerdshirt
 	name = "gamer shirt"
 	desc = "(I) A baggy shirt with vintage game character Phanic the Weasel. Why would anyone wear this?"
 	icon_state = "nerdshirt"
 	item_state = "nerdshirt"
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/vapeshirt //wearing this is asking to get beat.
 	name = "Vape Naysh shirt"
 	desc = "(I) A cheap white T-shirt with a big tacky \"VN\" on the front, Why would you wear this unironically?"
 	icon_state = "vapeshirt"
 	item_state = "vapeshirt"
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/jacket
 	name = "bomber jacket"
@@ -391,8 +361,6 @@
 	item_state = "brownjsuit"
 	cold_protection = CHEST|GROIN|ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-	armor = list("tier" = 2)
 
 /obj/item/clothing/suit/jacket/flannel
 	name = "black flannel jacket"
@@ -425,23 +393,19 @@
 	item_state = "hostrench"
 	resistance_flags = NONE
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
-	armor = list("tier" = 2)
 
 /obj/item/clothing/suit/jacket/leather/overcoat
 	name = "leather overcoat"
 	desc = "(II) That's a damn fine coat."
 	icon_state = "leathercoat"
 	cold_protection = CHEST|GROIN|ARMS|LEGS
-	mutantrace_variation = STYLE_DIGITIGRADE
-	armor = list("tier" = 2)
-
 
 /obj/item/clothing/suit/jacket/puffer
 	name = "puffer jacket"
 	desc = "(I) A thick jacket with a rubbery, water-resistant shell."
 	icon_state = "pufferjacket"
 	item_state = "hostrench"
-	armor = list("tier" = 1,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 5, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/jacket/puffer/vest
 	name = "puffer vest"
@@ -449,14 +413,14 @@
 	icon_state = "puffervest"
 	item_state = "armor"
 	cold_protection = CHEST|GROIN
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 30, "rad" = 0, "fire" = 0, "acid" = 0)
+
 
 /obj/item/clothing/suit/jacket/miljacket
 	name = "military jacket"
 	desc = "(II) A canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable."
 	icon_state = "militaryjacket"
 	item_state = "militaryjacket"
-	armor = list("tier" = 2)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 5, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/jacket/letterman
 	name = "letterman jacket"
@@ -470,17 +434,6 @@
 	icon_state = "letterman_red"
 	item_state = "letterman_red"
 
-/obj/item/clothing/suit/jacket/letterman_syndie
-	name = "blood-red letterman jacket"
-	desc = "(I) Oddly, this jacket seems to have a large S on the back..."
-	icon_state = "letterman_s"
-	item_state = "letterman_s"
-
-/obj/item/clothing/suit/jacket/letterman_nanotrasen
-	name = "blue letterman jacket"
-	desc = "(I) A blue letterman jacket with a proud Nanotrasen N on the back. The tag says that it was made in Space China."
-	icon_state = "letterman_n"
-	item_state = "letterman_n"
 
 /obj/item/clothing/suit/dracula
 	name = "dracula coat"
@@ -515,77 +468,29 @@
 
 /obj/item/clothing/suit/hooded/wintercoat
 	name = "winter coat"
-	desc = "(II) A heavy jacket made from 'synthetic' animal furs."
+	desc = "A heavy jacket made from 'synthetic' animal furs."
 	icon_state = "coatwinter"
 	item_state = "coatwinter"
 	body_parts_covered = CHEST|GROIN|ARMS
 	cold_protection = CHEST|GROIN|ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	armor = list("tier" = 2)
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/head/hooded/winterhood
 	name = "winter hood"
-	desc = "(II) A hood attached to a heavy winter jacket."
+	desc = "A hood attached to a heavy winter jacket."
 	icon_state = "winterhood"
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	flags_inv = HIDEHAIR|HIDEEARS
 	rad_flags = RAD_NO_CONTAMINATE
-	armor = list("tier" = 2)
-
-/obj/item/clothing/suit/hooded/wintercoat/centcom
-	name = "centcom winter coat"
-	desc = "(IV) A coat layered with both insulation and armor."
-	icon_state = "coatcentcom"
-	item_state = "coatcentcom"
-	armor = list("tier" = 4, "energy" = 35, "bomb" = 40, "bio" = 25, "rad" = 25, "fire" = 35, "acid" = 50)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/centcom
-
-/obj/item/clothing/suit/hooded/wintercoat/centcom/Initialize()
-	. = ..()
-	allowed = GLOB.security_wintercoat_allowed
-
-/obj/item/clothing/head/hooded/winterhood/centcom
-	icon_state = "winterhood_centcom"
-	armor = list("tier"  = 4, "energy" = 35, "bomb" = 40, "bio" = 25, "rad" = 25, "fire" = 35, "acid" = 50)
-
-/obj/item/clothing/suit/hooded/wintercoat/captain
-	name = "captain's winter coat"
-	desc = "(III) A luxurious winter coat, stuffed with the down of the endangered Uka bird and trimmed with genuine sable. The fabric is an indulgently soft micro-fiber, and the deep ultramarine color is only one that could be achieved with minute amounts of crystalline bluespace dust woven into the thread between the plectrums. Extremely lavish, and extremely durable. The tiny flakes of protective material make it nothing short of extremely light lamellar armor."
-	icon_state = "coatcaptain"
-	item_state = "coatcaptain"
-	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/captain
-
-/obj/item/clothing/suit/hooded/wintercoat/captain/Initialize()
-	. = ..()
-	allowed = GLOB.security_wintercoat_allowed
-
-/obj/item/clothing/head/hooded/winterhood/captain
-	desc = "(III) A blue and yellow hood attached to a heavy winter jacket."
-	icon_state = "winterhood_captain"
-	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
-
-/obj/item/clothing/suit/hooded/wintercoat/hop
-	name = "head of personnel's winter coat"
-	desc = "(I) A cozy winter coat, covered in thick fur. The breast features a proud yellow chevron, reminding everyone that you're the second banana."
-	icon_state = "coathop"
-	item_state = "coathop"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 5, "bio" = 5, "rad" = 0, "fire" = 0, "acid" = 5)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/hop
-
-/obj/item/clothing/head/hooded/winterhood/hop
-	desc = "(I) A cozy winter hood attached to a heavy winter jacket."
-	icon_state = "winterhood_hop"
 
 /obj/item/clothing/suit/hooded/wintercoat/security
 	name = "security winter coat"
-	desc = "(III) A red, armor-padded winter coat. It glitters with a mild ablative coating and a robust air of authority.  The zipper tab is a pair of jingly little handcuffs that get annoying after the first ten seconds."
+	desc = "A red, armor-padded winter coat. It glitters with a mild ablative coating and a robust air of authority.  The zipper tab is a pair of jingly little handcuffs that get annoying after the first ten seconds."
 	icon_state = "coatsecurity"
 	item_state = "coatsecurity"
-	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 45)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/security
 
 /obj/item/clothing/suit/hooded/wintercoat/security/Initialize()
@@ -593,82 +498,47 @@
 	allowed = GLOB.security_wintercoat_allowed
 
 /obj/item/clothing/head/hooded/winterhood/security
-	desc = "(III) A red, armor-padded winter hood."
+	desc = "A red, armor-padded winter hood."
 	icon_state = "winterhood_security"
-	armor = list("tier" = 3, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 45)
-
-
-/obj/item/clothing/suit/hooded/wintercoat/hos
-	name = "head of security's winter coat"
-	desc = "(IV) A red, armor-padded winter coat, lovingly woven with a Kevlar interleave and reinforced with semi-ablative polymers and a silver azide fill material. The zipper tab looks like a tiny replica of Beepsky."
-	icon_state = "coathos"
-	item_state = "coathos"
-	armor = list("tier" = 4, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 55)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/hos
-
-/obj/item/clothing/suit/hooded/wintercoat/hos/Initialize()
-	. = ..()
-	allowed = GLOB.security_wintercoat_allowed
-
-/obj/item/clothing/head/hooded/winterhood/hos
-	desc = "(IV) A red, armor-padded winter hood, lovingly woven with a Kevlar interleave. Definitely not bulletproof, especially not the part where your face goes."
-	icon_state = "winterhood_hos"
-	armor = list("tier" = 4, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 55)
-
-/obj/item/clothing/suit/hooded/wintercoat/medical
-	name = "medical winter coat"
-	desc = "(I) An arctic white winter coat with a small blue caduceus instead of a plastic zipper tab. Snazzy."
-	icon_state = "coatmedical"
-	item_state = "coatmedical"
-	armor = list("tier" = 1,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 0, "acid" = 45)
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical
-
-/obj/item/clothing/head/hooded/winterhood/medical
-	desc = "(I) A white winter coat hood."
-	icon_state = "winterhood_medical"
 
 /obj/item/clothing/suit/hooded/wintercoat/cmo
 	name = "chief medical officer's winter coat"
-	desc = "(I) An arctic white winter coat with a small blue caduceus instead of a plastic zipper tab. The normal liner is replaced with an exceptionally thick, soft layer of fur."
+	desc = "An arctic white winter coat with a small blue caduceus instead of a plastic zipper tab. The normal liner is replaced with an exceptionally thick, soft layer of fur."
 	icon_state = "coatcmo"
 	item_state = "coatcmo"
-	armor = list("tier" = 1,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 0, "acid" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/cmo
 
 /obj/item/clothing/head/hooded/winterhood/cmo
-	desc = "(I) A white winter coat hood."
+	desc = "A white winter coat hood."
 	icon_state = "winterhood_cmo"
 
 /obj/item/clothing/suit/hooded/wintercoat/chemistry
 	name = "chemistry winter coat"
-	desc = "(I) A lab-grade winter coat made with acid resistant polymers. For the enterprising chemist who was exiled to a frozen wasteland on the go."
+	desc = "A lab-grade winter coat made with acid resistant polymers. For the enterprising chemist who was exiled to a frozen wasteland on the go."
 	icon_state = "coatchemistry"
 	item_state = "coatchemistry"
-	armor = list("tier" = 1,"energy" = 0, "bomb" = 0, "bio" = 30, "rad" = 0, "fire" = 30, "acid" = 45)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/chemistry
 
 /obj/item/clothing/head/hooded/winterhood/chemistry
-	desc = "(I) A white winter coat hood."
+	desc = "A white winter coat hood."
 	icon_state = "winterhood_chemistry"
 
 /obj/item/clothing/suit/hooded/wintercoat/viro
 	name = "virology winter coat"
-	desc = "(I) A white winter coat with green markings. Warm, but wont fight off the common cold or any other disease. Might make people stand far away from you in the hallway. The zipper tab looks like an oversized bacteriophage."
+	desc = "A white winter coat with green markings. Warm, but wont fight off the common cold or any other disease. Might make people stand far away from you in the hallway. The zipper tab looks like an oversized bacteriophage."
 	icon_state = "coatviro"
 	item_state = "coatviro"
-	armor = list("tier" = 0,"energy" = 0, "bomb" = 0, "bio" = 30, "rad" = 0, "fire" = 0, "acid" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/viro
 
 /obj/item/clothing/head/hooded/winterhood/viro
-	desc = "(I) A white winter coat hood with green markings."
+	desc = "A white winter coat hood with green markings."
 	icon_state = "winterhood_viro"
 
 /obj/item/clothing/suit/hooded/wintercoat/paramedic
 	name = "paramedic winter coat"
-	desc = "(I) A winter coat with blue markings. Warm, but probably won't protect from biological agents. For the cozy doctor on the go."
+	desc = "A winter coat with blue markings. Warm, but probably won't protect from biological agents. For the cozy doctor on the go."
 	icon_state = "coatparamed"
 	item_state = "coatparamed"
-	armor = list("tier" = 1,"energy" = 0, "bomb" = 0, "bio" = 50, "rad" = 0, "fire" = 0, "acid" = 45)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/paramedic
 
 /obj/item/clothing/head/hooded/winterhood/paramedic
@@ -680,7 +550,6 @@
 	desc = "(I) A white winter coat with an outdated atomic model instead of a plastic zipper tab."
 	icon_state = "coatscience"
 	item_state = "coatscience"
-	armor = list("tier" = 1,"energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/science
 
 /obj/item/clothing/head/hooded/winterhood/science
@@ -692,7 +561,6 @@
 	desc = "(I) A black winter coat with a badass flaming robotic skull for the zipper tab. This one has bright red designs and a few useless buttons."
 	icon_state = "coatrobotics"
 	item_state = "coatrobotics"
-	armor = list("tier" = 1,"energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/robotics
 
 /obj/item/clothing/head/hooded/winterhood/robotics
@@ -715,7 +583,6 @@
 	desc = "(I) A thick arctic winter coat with an outdated atomic model instead of a plastic zipper tab. Most in the know are heavily aware that Bohr's model of the atom was outdated by the time of the 1930s when the Heisenbergian and Schrodinger models were generally accepted for true. Nevertheless, we still see its use in anachronism, roleplaying, and, in this case, as a zipper tab. At least it should keep you warm on your ivory pillar."
 	icon_state = "coatrd"
 	item_state = "coatrd"
-	armor = list("tier" = 1,"energy" = 0, "bomb" = 15, "bio" = 5, "rad" = 5, "fire" = 0, "acid" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/rd
 
 /obj/item/clothing/head/hooded/winterhood/rd
@@ -727,7 +594,6 @@
 	desc = "(I) A white winter coat with reflective green and yellow stripes. Stuffed with asbestos, treated with fire retardant PBDE, lined with a micro thin sheet of lead foil and snugly fitted to your body's measurements. This baby's ready to save you from anything except the thyroid cancer and systemic fibrosis you'll get from wearing it. The zipper tab is a tiny golden wrench."
 	icon_state = "coatce"
 	item_state = "coatce"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 30, "fire" = 35, "acid" = 45)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/ce
 
 /obj/item/clothing/head/hooded/winterhood/ce
@@ -739,7 +605,6 @@
 	desc = "(I) A surprisingly heavy yellow winter coat with reflective orange stripes. It has a small wrench for its zipper tab, and the inside layer is covered with a radiation-resistant silver-nylon blend. Because you're worth it."
 	icon_state = "coatengineer"
 	item_state = "coatengineer"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 20, "fire" = 30, "acid" = 45)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/engineering
 
 /obj/item/clothing/head/hooded/winterhood/engineering
@@ -841,7 +706,6 @@
 	desc = "(I) A dusty button up winter coat. The zipper tab looks like a tiny pickaxe."
 	icon_state = "coatminer"
 	item_state = "coatminer"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/miner
 
 /obj/item/clothing/head/hooded/winterhood/miner
@@ -853,7 +717,6 @@
 	desc = "(III) A brass-plated button up winter coat. Instead of a zipper tab, it has a brass cog with a tiny red gemstone inset."
 	icon_state = "coatratvar"
 	item_state = "coatratvar"
-	armor = list("tier" = 3, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/ratvar
 	var/real = TRUE
 
@@ -863,7 +726,7 @@
 	light_range = 3
 	light_power = 1
 	light_color = "#B18B25" //clockwork slab background top color
-	armor = list("tier" = 3, "energy" = 0, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 60, "acid" = 60)
+
 
 /obj/item/clothing/suit/hooded/wintercoat/ratvar/equipped(mob/living/user,slot)
 	..()
@@ -882,7 +745,6 @@
 	desc = "(III) A somber button-up in tones of grey entropy and a wicked crimson zipper. When pulled all the way up, the zipper looks like a bloody gash. The zipper pull looks like a single drop of blood."
 	icon_state = "coatnarsie"
 	item_state = "coatnarsie"
-	armor = list("tier" = 3,"energy" = 10, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 30, "acid" = 30)
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/narsie
 	var/real = TRUE
 
@@ -901,14 +763,14 @@
 /obj/item/clothing/head/hooded/winterhood/narsie
 	desc = "(III) A black winter hood full of whispering secrets that only She shall ever know."
 	icon_state = "winterhood_narsie"
-	armor = list("tier" = 3,"energy" = 10, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 30, "acid" = 30)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/hooded/wintercoat/ratvar/fake
 	name = "brass winter coat"
 	desc = "(I) A brass-plated button up winter coat. Instead of a zipper tab, it has a brass cog with a tiny red piece of plastic as an inset."
 	icon_state = "coatratvar"
 	item_state = "coatratvar"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
 	real = FALSE
 
 /obj/item/clothing/suit/hooded/wintercoat/narsie/fake
@@ -916,7 +778,7 @@
 	desc = "(I) A dusty button up winter coat in the tones of oblivion and ash. The zipper pull looks like a single drop of blood."
 	icon_state = "coatnarsie"
 	item_state = "coatnarsie"
-	armor = list("tier" = 1,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
 	real = FALSE
 
 /obj/item/clothing/suit/hooded/wintercoat/durathread
@@ -924,7 +786,7 @@
 	desc = "(II) The one coat to rule them all. Extremely durable while providing the utmost comfort."
 	icon_state = "coatdurathread"
 	item_state = "coatdurathread"
-	armor = list("tier" = 2, "energy" = 5, "bomb" = 12, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
+
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/durathread
 
 /obj/item/clothing/suit/hooded/wintercoat/durathread/Initialize()
@@ -933,7 +795,7 @@
 
 /obj/item/clothing/head/hooded/winterhood/durathread
 	icon_state = "winterhood_durathread"
-	armor = list("tier" = 2, "energy" = 8, "bomb" = 25, "bio" = 10, "rad" = 15, "fire" = 75, "acid" = 37)
+
 	desc = "(II) The one coat to rule them all. Extremely durable while providing the utmost comfort."
 
 /obj/item/clothing/suit/spookyghost
@@ -950,7 +812,7 @@
 	desc = "(I) A big and clanky suit made of bronze that offers no protection and looks very unfashionable. Nice."
 	icon = 'icons/obj/clothing/clockwork_garb.dmi'
 	icon_state = "clockwork_cuirass_old"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 20)
+
 
 /obj/item/clothing/suit/ghost_sheet
 	name = "ghost sheet"
@@ -974,7 +836,6 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = CHEST
 	resistance_flags = NONE
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = -5, "acid" = -15) //nylon sucks against acid
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/assu_suit
@@ -1042,11 +903,11 @@
 	desc = "(II) An outfit used by traditional japanese warriors."
 	icon_state = "samurai"
 	item_state = "samurai"
-	armor = list("tier" = 2)
+	armor = list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/bomber
 	name = "old bomber jacket"
 	desc = "(II) It looks like someone dragged this out of a muddy lake."
 	icon_state = "bomberalt"
 	item_state = "bomberalt"
-	armor = list("tier" = 2)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0)

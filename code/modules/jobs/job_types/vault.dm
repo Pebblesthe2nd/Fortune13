@@ -112,8 +112,6 @@ Head of Security
 	ears = 			/obj/item/radio/headset/headset_vault_hos/alt
 	uniform = 		/obj/item/clothing/under/f13/vault13
 	shoes = 		/obj/item/clothing/shoes/jackboots
-	suit = 			/obj/item/clothing/suit/armor/vest/alt
-	head = 			/obj/item/clothing/head/collectable/police/cos
 	belt = 			/obj/item/storage/belt/security
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	r_hand =		/obj/item/gun/ballistic/revolver/colt6520
@@ -219,9 +217,9 @@ Scientist
 		return
 	ADD_TRAIT(H, TRAIT_SURGERY_MID, src) //they need this for dissections
 
-/*
-Security Officer
-*/
+
+// Security Officer
+
 /datum/job/vault/f13officer
 	title = "Vault-tec Security"
 	flag = F13OFFICER
@@ -253,8 +251,7 @@ Security Officer
 	//pda
 	ears = 			/obj/item/radio/headset/headset_vaultsec
 	uniform = 		/obj/item/clothing/under/f13/vault13
-	head = 			/obj/item/clothing/head/helmet/riot/vaultsec
-	suit =			/obj/item/clothing/suit/armor/vest
+	suit =			/obj/item/clothing/suit/armor/medium/bulletproof
 	glasses = 		/obj/item/clothing/glasses/sunglasses
 	shoes = 		/obj/item/clothing/shoes/jackboots
 	belt = 			/obj/item/storage/belt/security
@@ -271,7 +268,6 @@ Security Officer
 		/obj/item/crowbar = 1)
 
 	implants = list(/obj/item/implant/mindshield)
-
 
 /obj/item/radio/headset/headset_sec/alt/department/Initialize()
 	. = ..()

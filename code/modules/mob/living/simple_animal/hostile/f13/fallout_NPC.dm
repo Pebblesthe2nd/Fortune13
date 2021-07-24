@@ -34,7 +34,6 @@
 /obj/effect/mob_spawn/human/corpse/vault
 	name = "Vault Dweller"
 	uniform = /obj/item/clothing/under/f13/vault/v13
-	//suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	//gloves = /obj/item/clothing/gloves/combat
 	//radio = /obj/item/device/radio/headset

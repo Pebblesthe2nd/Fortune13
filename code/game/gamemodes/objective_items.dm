@@ -27,13 +27,13 @@
 
 /datum/objective_item/steal/caplaser
 	name = "the captain's antique laser gun."
-	targetitem = /obj/item/gun/energy/laser/captain
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 5
 	excludefromjob = list("Captain")
 
 /datum/objective_item/steal/hoslaser
 	name = "the head of security's personal laser gun."
-	targetitem = /obj/item/gun/energy/e_gun/hos
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 10
 	excludefromjob = list("Head Of Security")
 	altitems = list(/obj/item/gun/ballistic/revolver) //We now look for either the alt verson of the hos gun or the beacon picker.
@@ -79,13 +79,13 @@
 
 /datum/objective_item/steal/reflector
 	name = "a reflector vest."
-	targetitem = /obj/item/clothing/suit/armor/laserproof
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 3
 	excludefromjob = list("Head of Security", "Warden")
 
 /datum/objective_item/steal/reactive
 	name = "a reactive teleport armor."
-	targetitem = /obj/item/clothing/suit/armor/reactive
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 5
 	excludefromjob = list("Research Director","Scientist", "Roboticist")
 
@@ -197,42 +197,42 @@
 //Old ninja objectives.
 /datum/objective_item/special/pinpointer/nuke
 	name = "the captain's pinpointer."
-	targetitem = /obj/item/pinpointer
+	targetitem =/obj/item/disk/nuclear
 	difficulty = 10
 
 /datum/objective_item/special/aegun
 	name = "an advanced energy gun."
-	targetitem = /obj/item/gun/energy/e_gun/nuclear
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 10
 
 /datum/objective_item/special/ddrill
 	name = "a diamond drill."
-	targetitem = /obj/item/pickaxe/drill/diamonddrill
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 10
 
 /datum/objective_item/special/boh
 	name = "a type of bag of holding."
-	targetitem = /obj/item/storage/backpack/holding
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 10
 
 /datum/objective_item/special/adv_surgical_drapes
 	name = "a set of smart surgical drapes."
-	targetitem = /obj/item/surgical_drapes/advanced
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 10 //would be 15 but cmo rarely have it on themselfs and leave it in their lockers...
 
 /datum/objective_item/special/bluespace
 	name = "a bluespace power cell."
-	targetitem = /obj/item/stock_parts/cell/bluespace
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 5
 
 /datum/objective_item/special/laserpointer
 	name = "a laser pointer."
-	targetitem = /obj/item/laser_pointer
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 5
 
 /datum/objective_item/special/corgimeat
 	name = "a piece of corgi meat."
-	targetitem = /obj/item/reagent_containers/food/snacks/meat/slab/corgi
+	targetitem = /obj/item/disk/nuclear
 	difficulty = 5
 
 /datum/objective_item/stack/New()

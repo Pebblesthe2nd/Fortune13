@@ -86,7 +86,7 @@
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "combat_armor_mk2"
 	item_state = "combat_armor_mk2"
-	armor = list("tier" = 6, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 35, "energy" = 35, "bomb" = 30, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
 
 /obj/item/clothing/suit/armor/f13/combat/mk2/dark
 	name = "reinforced combat armor"
@@ -557,10 +557,10 @@
 
 /obj/item/clothing/suit/armor/f13/combat/enclave
 	name = "enclave combat armor"
-	desc = "(VI) An old set of pre-war combat armor, painted black."
+	desc = "A set of matte black advanced pre-war combat armor."
 	icon_state = "enclave_new"
 	item_state = "enclave_new"
-	armor = list("tier" = 6, "energy" = 75, "bomb" = 70, "bio" = 80, "rad" = 80, "fire" = 80, "acid" = 50)
+	armor = list("melee" = 35, "bullet" = 45, "laser" = 35, "energy" = 35, "bomb" = 30, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
 
 /obj/item/clothing/suit/armor/f13/enclave/armorvest
 	name = "armored vest"
@@ -575,3 +575,25 @@
 	icon_state = "armor_enclave_officer"
 	item_state = "armor_enclave_officer"
 	armor = list("melee" = 60, "bullet" = 45, "energy" = 40, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+
+
+/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+	name = "Great Khan jacket"
+	desc = "(IV) A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem."
+	icon_state = "khan_jacket"
+	item_state = "jensencoat"
+    armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 25, "fire" = 25, "acid" = 5)
+
+/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket_armored
+	name = "Great Khan armored jacket"
+	desc = "(V) A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem.<br>Protective plates have been sewn into the jacket."
+	icon_state = "khan_jacket"
+	item_state = "jensencoat"
+    armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 25, "fire" = 25, "acid" = 5)
+
+/obj/item/clothing/suit/toggle/labcoat/f13/khan/battlecoat
+	name = "Great Khan battle coat"
+	desc = "(V) A dark red leather coat lined with a patchwork of metal plates and padding on the inside. The back is dominated by a burning skull adorned with a horned helmet; the symbol of the Khans."
+	icon_state = "khan_battlecoat"
+	item_state = "khan_battlecoat"
+    armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 25, "fire" = 25, "acid" = 5)

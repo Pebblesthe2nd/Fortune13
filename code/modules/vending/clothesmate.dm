@@ -164,7 +164,6 @@
 					/obj/item/clothing/head/ushanka = 3,
 					/obj/item/clothing/under/costume/soviet = 3,
 					/obj/item/storage/belt/fannypack/black = 3,
-					/obj/item/clothing/suit/jacket/letterman_syndie = 5,
 					/obj/item/clothing/under/costume/jabroni = 2,
 					/obj/item/clothing/suit/vapeshirt = 2,
 					/obj/item/clothing/under/costume/geisha = 4,
@@ -173,12 +172,8 @@
 	premium = list(/obj/item/clothing/under/suit/checkered = 4,
 					/obj/item/clothing/head/mailman = 2,
 					/obj/item/clothing/under/misc/mailman = 2,
-					/obj/item/clothing/suit/jacket/leather = 4,
-					/obj/item/clothing/suit/jacket/leather/overcoat = 4,
 					/obj/item/clothing/under/pants/mustangjeans = 3,
-					/obj/item/clothing/neck/necklace/dope = 5,
-					/obj/item/clothing/suit/jacket/letterman_nanotrasen = 5,
-					/obj/item/clothing/suit/hooded/wintercoat/polychromic = 5)
+					/obj/item/clothing/neck/necklace/dope = 5,)
 	refill_canister = /obj/item/vending_refill/clothing
 	default_price = PRICE_CHEAP
 	extra_price = PRICE_BELOW_NORMAL

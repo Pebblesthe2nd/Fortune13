@@ -10736,7 +10736,6 @@
 /area/ai_monitored/security/armory)
 "aCY" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/vest/alt,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/ai_monitored/security/armory)
@@ -19828,7 +19827,6 @@
 	},
 /area/f13/sunny_dale)
 "bcI" = (
-/obj/item/clothing/suit/det_suit,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -36259,16 +36257,6 @@
 /obj/item/clothing/under/syndicate/brotherhood,
 /obj/item/pda/heads/hos,
 /obj/item/storage/briefcase,
-/obj/item/clothing/suit/armor/vest/capcarapace/syndicate{
-	desc = "A sinister looking vest of advanced armor worn over a black and red fireproof jacket. The gold collar and shoulders denote that this belongs to a high ranking officer of some lost prewar army.";
-	name = "old officer's vest"
-	},
-/obj/item/clothing/head/HoS/beret/syndicate{
-	name = "officer's beret"
-	},
-/obj/item/clothing/under/f13/bosformgold_m,
-/obj/item/clothing/under/f13/bosformgold_f,
-/obj/item/clothing/head/f13/boscap,
 /obj/structure/closet/cabinet,
 /turf/open/floor/carpet/black,
 /area/f13/brotherhood)
@@ -38195,8 +38183,6 @@
 /obj/structure/light_construct,
 /obj/structure/table,
 /obj/item/clothing/neck/stethoscope,
-/obj/item/clothing/suit/armor/hos/trenchcoat,
-/obj/item/clothing/head/HoS/beret,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},

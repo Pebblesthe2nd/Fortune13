@@ -559,10 +559,6 @@
 /area/awaymission/cabin/snowforest/sovietsurface)
 "bL" = (
 /obj/structure/bed,
-/obj/item/bedsheet/nanotrasen,
-/obj/item/clothing/suit/hooded/wintercoat/captain{
-	name = "manager's winter coat"
-	},
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "bM" = (
@@ -2954,21 +2950,6 @@
 	anchored = 1;
 	name = "Who"
 	},
-/obj/item/clothing/head/helmet/knight/yellow{
-	armor = list("melee" = 11, "bullet" = 2, "laser" = 1, "energy" = 1, "bomb" = 5, "bio" = 2, "rad" = 0, "fire" = 0, "acid" = 10);
-	desc = "A classic metal helmet. The cold has made it unreliable though.";
-	name = "old medieval helmet";
-	pixel_y = 7
-	},
-/obj/item/claymore/weak/ceremonial{
-	desc = "Brought to you by the guys in charge of making replica katana toys!";
-	force = 1;
-	layer = 3.01;
-	name = "replica claymore";
-	pixel_x = 5;
-	pixel_y = 8;
-	throwforce = 2
-	},
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/cabin/snowforest)
 "hW" = (
@@ -2981,10 +2962,6 @@
 /turf/open/floor/plating/ice/smooth,
 /area/awaymission/cabin/caves)
 "hX" = (
-/obj/item/clothing/suit/armor/vest/russian_coat{
-	pixel_x = 16;
-	pixel_y = 16
-	},
 /turf/open/floor/plating/snowed/temperatre,
 /area/awaymission/cabin/snowforest/sovietsurface)
 "hY" = (
@@ -3470,13 +3447,7 @@
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "jq" = (
-/obj/item/clothing/suit/hooded/wintercoat/medical{
-	pixel_y = 3
-	},
 /obj/structure/table/reinforced,
-/obj/item/clothing/suit/hooded/wintercoat/medical{
-	pixel_y = 3
-	},
 /obj/item/reagent_containers/glass/bottle/cryoxadone,
 /obj/item/reagent_containers/glass/bottle/cryoxadone,
 /obj/effect/mapping_helpers/network_builder/power_cable/yellow/auto,

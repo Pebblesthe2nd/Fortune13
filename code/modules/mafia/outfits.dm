@@ -19,7 +19,6 @@
 	uniform = /obj/item/clothing/under/rank/security/detective
 	// neck = /obj/item/clothing/neck/tie/detective
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	suit = /obj/item/clothing/suit/det_suit
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/fedora/det_hat
 	mask = /obj/item/clothing/mask/cigarette
@@ -53,7 +52,6 @@
 	name = "Mafia Head of Personnel"
 
 	uniform = /obj/item/clothing/under/rank/civilian/head_of_personnel
-	suit = /obj/item/clothing/suit/armor/vest/alt
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	head = /obj/item/clothing/head/hopcap
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -63,8 +61,6 @@
 /datum/outfit/mafia/changeling
 	name = "Mafia Changeling"
 
-	head = /obj/item/clothing/head/helmet/changeling
-	suit = /obj/item/clothing/suit/armor/changeling
 
 //solo
 

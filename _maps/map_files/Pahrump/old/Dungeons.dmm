@@ -3851,8 +3851,6 @@
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
 	name = "vault 223 jumpsuit"
 	},
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -3974,8 +3972,6 @@
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
 	name = "vault 223 jumpsuit"
 	},
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -4100,7 +4096,6 @@
 /obj/item/clothing/gloves/color/captain,
 /obj/item/clothing/head/caphat/parade,
 /obj/item/clothing/neck/cloak/cap,
-/obj/item/clothing/suit/armor/vest/capcarapace/alt,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2"
 	},
@@ -15384,8 +15379,6 @@
 /obj/item/gun/ballistic/automatic/pistol/n99,
 /obj/item/ammo_box/magazine/m10mm_adv/simple,
 /obj/item/ammo_box/magazine/m10mm_adv/simple,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
@@ -15406,8 +15399,6 @@
 /obj/item/gun/ballistic/automatic/pistol/n99,
 /obj/item/ammo_box/magazine/m10mm_adv/simple,
 /obj/item/ammo_box/magazine/m10mm_adv/simple,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
@@ -15424,8 +15415,6 @@
 /obj/item/gun/ballistic/automatic/pistol/n99,
 /obj/item/ammo_box/magazine/m10mm_adv/simple,
 /obj/item/ammo_box/magazine/m10mm_adv/simple,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
@@ -15449,8 +15438,6 @@
 /obj/item/gun/ballistic/automatic/pistol/n99,
 /obj/item/ammo_box/magazine/m10mm_adv/simple,
 /obj/item/ammo_box/magazine/m10mm_adv/simple,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
 /obj/effect/spawner/lootdrop/armory_contraband,
 /obj/item/flashlight/seclite,
@@ -15938,8 +15925,6 @@
 /obj/item/clothing/head/f13/police,
 /obj/item/clothing/shoes/f13/military,
 /obj/item/clothing/shoes/f13/military,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/suit/armor/vest,
 /obj/item/restraints/handcuffs,
 /obj/item/restraints/handcuffs,
 /obj/item/flashlight{

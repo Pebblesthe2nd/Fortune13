@@ -1173,8 +1173,6 @@
 /obj/item/gun/ballistic/automatic/pistol/n99,
 /obj/item/ammo_box/magazine/m10mm_adv,
 /obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
 /obj/machinery/light{
 	dir = 4;
@@ -1362,8 +1360,6 @@
 /obj/item/gun/ballistic/automatic/pistol/n99,
 /obj/item/ammo_box/magazine/m10mm_adv,
 /obj/item/ammo_box/magazine/m10mm_adv,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/glasses/sunglasses,
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/vault)
@@ -1375,7 +1371,6 @@
 	pixel_x = -32
 	},
 /obj/structure/dresser,
-/obj/item/clothing/suit/hooded/wintercoat/captain,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/vault)
 "adK" = (
@@ -28642,8 +28637,6 @@
 /area/f13/underground/cave/vault/fourfivefour)
 "bHW" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/riot,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /obj/item/clothing/mask/gas,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
@@ -40278,10 +40271,6 @@
 /obj/item/clothing/under/f13/cowboyb,
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/clothing_middle,
-/obj/item/clothing/head/collectable/police/cos{
-	name = "Chief of Police Hat"
-	},
-/obj/item/clothing/suit/armor/vest/leather,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/glasses/orange,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
@@ -41146,7 +41135,6 @@
 /obj/structure/chair/booth{
 	icon_state = "booth_east_south"
 	},
-/obj/item/clothing/suit/hooded/wintercoat/captain,
 /turf/open/floor/f13/wood,
 /area/f13/klamat)
 "rka" = (

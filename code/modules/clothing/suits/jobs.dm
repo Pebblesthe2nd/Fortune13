@@ -106,27 +106,6 @@
 	icon_state = "greydet"
 	item_state = "greydet"
 
-/obj/item/clothing/suit/det_suit/forensicsred
-	name = "red forensics coat"
-	icon_state = "forensics_red"
-	item_state = "forensics_red"
-
-/obj/item/clothing/suit/det_suit/forensicsred/long
-	name = "long red forensics coat"
-	icon_state = "forensics_red_long"
-	item_state = "forensics_red_long"
-
-/obj/item/clothing/suit/det_suit/forensicsblue
-	name = "blue forensics coat"
-	icon_state = "forensics_blue"
-	item_state = "forensics_blue"
-
-/obj/item/clothing/suit/det_suit/forensicsblue/long
-	name = "long blue forensics coat"
-	icon_state = "forensics_blue_long"
-	item_state = "forensics_blue_long"
-
-
 //Engineering
 /obj/item/clothing/suit/hazardvest
 	name = "hazard vest"
@@ -190,8 +169,6 @@
 	armor = list("tier" = 3, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 45)
 	cold_protection = CHEST|ARMS
 	heat_protection = CHEST|ARMS
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
 
 //Robotocist
 
@@ -212,7 +189,6 @@
 	body_parts_covered = HEAD
 	flags_inv = HIDEHAIR|HIDEEARS
 	mutantrace_variation = STYLE_MUZZLE
-
 
 //Paramedic
 

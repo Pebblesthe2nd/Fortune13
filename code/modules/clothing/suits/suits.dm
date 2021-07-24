@@ -1,3 +1,34 @@
+/obj/item/clothing/suit/toggle/labcoat/fieldscribe
+	name = "fieldscribe suit"
+	desc = "(II) A suit that protects against the weather, and looks stylish, but not much else."
+	icon_state = "fieldscribe"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/suit/toggle/labcoat/scribecoat
+	name = "fieldscribe coat"
+	desc = "(II) A heavy-duty coat and chestrig fitted with tons of pockets for every scribe's storage needs."
+	icon_state = "scribecoat"
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+
+
+/obj/item/clothing/suit/armor/f13/slavelabor
+	name = "old leather strips"
+	desc = "Worn leather strips, used as makeshift protection from chafing and sharp stones by labor slaves."
+	icon = 'icons/fallout/objects/clothing/suits.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/suit.dmi'
+	icon_state = "legion-slaveleather"
+	item_state = "legion-slaveleather"
+
+/obj/item/clothing/neck/cloak/treasurer
+	name = "treasurers cloak"
+	desc = "The grey and black cloak with gold thread trimming shows the wearer is entrusted with matters of money and records."
+	icon = 'icons/obj/clothing/cloaks.dmi'
+	icon_state = "legtrescloak"
+	item_state = "legtrescloak"
+	w_class = WEIGHT_CLASS_SMALL
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+
 //Fallout 50s
 /obj/item/clothing/suit/f13/apron50shousewife
 	name = "housewife apron"
@@ -102,75 +133,15 @@
 	item_state = "wcoat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
 	
-/obj/item/clothing/suit/f13/sexymaid
-	name = "sexy maid outfit"
-	desc = "A maid outfit that shows just a little more skin than needed for cleaning duties."
-	icon_state = "sexymaid_s"
-	item_state = "sexymaid_s"
-	body_parts_covered = CHEST
-
-/obj/item/clothing/suit/f13/blacksmith_apron
-	name = "blacksmith apron"
-	desc = "A heavy leather apron designed for protecting the user when metalforging."
-	icon_state = "opifex_apron"
-	item_state = "opifex_apron"
-	blood_overlay_type = "armor"
-	allowed = list(/obj/item/crowbar,
-		/obj/item/screwdriver,
-		/obj/item/weldingtool,
-		/obj/item/wirecutters,
-		/obj/item/wrench,
-		/obj/item/multitool,
-		/obj/item/flashlight,)
-
-//Special Biosuit
-
-/obj/item/clothing/suit/bio_suit/f13/hazmat
-	name = "hazmat suit"
-	desc = "Yellow Level A , hazmat protective suit.<br>You can see some numbers on the tag: 35 56."
-	icon = 'icons/fallout/clothing/suits.dmi'
-	icon_state = "hazmat"
-	item_state = "hazmat_suit"
-
-/obj/item/clothing/head/bio_hood/f13/hazmat
-	name = "hazmat hood"
-	desc = "My star, my perfect silence."
-	icon = 'icons/fallout/clothing/hats.dmi'
-	icon_state = "hazmat"
-	item_state = "hazmat_helmet"
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
 //Fallout 13 toggle apparel directory
-
-
 
 /obj/item/clothing/suit/toggle/labcoat/f13/wanderer
 	name = "wanderer jacket"
 	desc = "A zipped-up hoodie made of tanned leather."
 	icon_state = "wanderer"
 	item_state = "owl"
-	armor = list("tier" = 2, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
-	name = "Great Khan jacket"
-	desc = "(IV) A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem."
-	icon_state = "khan_jacket"
-	item_state = "jensencoat"
-	armor = list("tier" = 4, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket_armored
-	name = "Great Khan armored jacket"
-	desc = "(V) A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem.<br>Protective plates have been sewn into the jacket."
-	icon_state = "khan_jacket"
-	item_state = "jensencoat"
-	armor = list("tier" = 5, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-
-/obj/item/clothing/suit/toggle/labcoat/f13/khan/battlecoat
-	name = "Great Khan battle coat"
-	desc = "(V) A dark red leather coat lined with a patchwork of metal plates and padding on the inside. The back is dominated by a burning skull adorned with a horned helmet; the symbol of the Khans."
-	icon_state = "khan_battlecoat"
-	item_state = "khan_battlecoat"
-	armor = list("tier" = 5, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/toggle/labcoat/f13/wanderer
 	name = "wanderer jacket"
@@ -178,7 +149,6 @@
 	icon_state = "wanderer"
 	item_state = "owl"
 	armor = list("melee" = 10, "bullet" = 5, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
 
 /obj/item/clothing/suit/toggle/labcoat/f13/followers
 	name = "followers lab coat"

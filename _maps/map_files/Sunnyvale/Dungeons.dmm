@@ -2645,8 +2645,6 @@
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
 	name = "vault 223 jumpsuit"
 	},
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -2764,8 +2762,6 @@
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
 	name = "vault 223 jumpsuit"
 	},
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet/riot/vaultsec,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},

@@ -533,7 +533,7 @@ Raider
 
 /datum/outfit/loadout/raider_sheriff
 	name = "Desperado"
-	suit = /obj/item/clothing/suit/armor/vest/leather
+	suit = /obj/item/clothing/suit/armor/light/leathercoat
 	uniform = /obj/item/clothing/under/syndicate/tacticool
 	head = /obj/item/clothing/head/helmet/f13/brahmincowboyhat
 	backpack_contents = list(
@@ -819,7 +819,7 @@ Raider
 /datum/outfit/loadout/hitman
 	name = "Hitman"
 	r_hand = /obj/item/gun/ballistic/automatic/smg/mini_uzi
-	suit = /obj/item/clothing/suit/armor/vest
+	suit = /obj/item/clothing/suit/armor/light/punk
 	backpack_contents = list(
 						/obj/item/ammo_box/magazine/uzim9mm=3, \
 						/obj/item/suppressor=1
@@ -828,7 +828,7 @@ Raider
 /datum/outfit/loadout/bodyguard
 	name = "Bodyguard"
 	r_hand = /obj/item/gun/ballistic/shotgun/police
-	suit = /obj/item/clothing/suit/armor/vest
+	suit = /obj/item/clothing/suit/armor/light/punk
 	backpack_contents = list(
 		/obj/item/ammo_box/shotgun/buck = 2,
 		/obj/item/melee/onehanded/knife/hunting = 1,

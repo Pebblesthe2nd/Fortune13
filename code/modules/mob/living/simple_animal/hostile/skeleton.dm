@@ -75,10 +75,7 @@
 	melee_damage_lower = 25
 	melee_damage_upper = 30
 	deathmessage = "collapses into a pile of bones, its gear clanging as it hits the ground!"
-	loot = list(/obj/effect/decal/remains/human,
-				/obj/item/clothing/suit/armor/riot/chaplain,
-				/obj/item/clothing/head/helmet/chaplain,
-				/obj/item/claymore/weak{name = "holy sword"})
+	loot = list(/obj/effect/decal/remains/human,)
 
 /mob/living/simple_animal/hostile/skeleton/ice
 	name = "ice skeleton"

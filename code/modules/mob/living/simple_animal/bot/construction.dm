@@ -61,7 +61,7 @@
 	item_state = "ed209_frame"
 	created_name = "ED-209 Security Robot" //To preserve the name if it's a unique securitron I guess
 	var/lasercolor = ""
-	var/vest_type = /obj/item/clothing/suit/armor/vest
+	var/vest_type = /obj/item/clothing/suit/armor/medium/bulletproof
 
 /obj/item/bot_assembly/ed209/attackby(obj/item/W, mob/user, params)
 	..()
@@ -83,11 +83,11 @@
 
 		if(ASSEMBLY_THIRD_STEP)
 			var/newcolor = ""
-			if(istype(W, /obj/item/clothing/suit/redtag))
+			if(istype(W, /obj/item/clothing/suit/armor/medium/bulletproof))
 				newcolor = "r"
-			else if(istype(W, /obj/item/clothing/suit/bluetag))
+			else if(istype(W, /obj/item/clothing/suit/armor/medium/bulletproof))
 				newcolor = "b"
-			if(newcolor || istype(W, /obj/item/clothing/suit/armor/vest))
+			if(newcolor || istype(W, /obj/item/clothing/suit/armor/medium/bulletproof))
 				if(!user.temporarilyRemoveItemFromInventory(W))
 					return
 				lasercolor = newcolor

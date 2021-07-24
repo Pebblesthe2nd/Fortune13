@@ -290,12 +290,9 @@
 		if("Miner")
 			mob_species = pickweight(list(/datum/species/human = 70, /datum/species/lizard = 26, /datum/species/fly = 2, /datum/species/plasmaman = 2))
 			if(mob_species == /datum/species/plasmaman)
-				uniform = /obj/item/clothing/under/plasmaman/mining
-				head = /obj/item/clothing/head/helmet/space/plasmaman/mining
 				belt = /obj/item/tank/internals/plasmaman/belt
 				mask = /obj/item/clothing/mask/gas/explorer
 			else
-				uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
 				if (prob(4))
 					belt = pickweight(list(/obj/item/storage/belt/mining = 2, /obj/item/storage/belt/mining/alt = 2))
 				else if(prob(10))
@@ -316,10 +313,6 @@
 			mob_species = /datum/species/lizard/ashwalker
 			uniform = /obj/item/clothing/under/costume/gladiator/ash_walker
 			if(prob(95))
-				head = /obj/item/clothing/head/helmet/gladiator
-			else
-				head = /obj/item/clothing/head/helmet/skull
-				suit = /obj/item/clothing/suit/armor/bone
 				gloves = /obj/item/clothing/gloves/bracer
 			if(prob(5))
 				back = pickweight(list(/obj/item/twohanded/spear/bonespear = 3, /obj/item/twohanded/fireaxe/boneaxe = 2))
@@ -344,10 +337,7 @@
 			uniform = /obj/item/clothing/under/costume/maid
 			gloves = /obj/item/clothing/gloves/color/white
 			shoes = /obj/item/clothing/shoes/laceup
-			head = /obj/item/clothing/head/helmet/knight
-			suit = /obj/item/clothing/suit/armor/riot/knight
 			back = /obj/item/shield/riot/buckler
-			belt = /obj/item/nullrod/claymore
 			r_pocket = /obj/item/tank/internals/emergency_oxygen
 			mask = /obj/item/clothing/mask/breath
 		if("Operative")
@@ -359,25 +349,15 @@
 			neck = /obj/item/clothing/accessory/medal/plasma/nobel_science
 			uniform = /obj/item/clothing/under/color/black
 			shoes = /obj/item/clothing/shoes/sneakers/black
-			suit = /obj/item/clothing/suit/toggle/labcoat
 			glasses = /obj/item/clothing/glasses/sunglasses/blindfold
 			back = /obj/item/tank/internals/oxygen
 			mask = /obj/item/clothing/mask/breath
 		if("Cultist")
-			uniform = /obj/item/clothing/under/costume/roman
-			suit = /obj/item/clothing/suit/cultrobes
-			head = /obj/item/clothing/head/culthood
 			suit_store = /obj/item/tome
-			r_pocket = /obj/item/restraints/legcuffs/bola/cult
-			l_pocket = /obj/item/melee/cultblade/dagger
-			glasses =  /obj/item/clothing/glasses/hud/health/night/cultblind
 			backpack_contents = list(/obj/item/reagent_containers/glass/beaker/unholywater = 1, /obj/item/cult_shift = 1, /obj/item/flashlight/flare/culttorch = 1, /obj/item/stack/sheet/runed_metal = 15)
 		if("Lavaknight")
-			uniform = /obj/item/clothing/under/misc/assistantformal
 			mask = /obj/item/clothing/mask/breath
 			shoes = /obj/item/clothing/shoes/sneakers/black
-			r_pocket = /obj/item/melee/transforming/energy/sword/cx/broken
-			suit = /obj/item/clothing/suit/space/hardsuit/lavaknight
 			suit_store = /obj/item/tank/internals/oxygen
 			id = /obj/item/card/id/knight
 			id_job = "Knight"
@@ -407,7 +387,6 @@
 
 		if("Beelegion")
 			uniform = /obj/item/clothing/under/color/yellow
-			suit = /obj/item/clothing/suit/hooded/bee_costume
 			shoes = /obj/item/clothing/shoes/sneakers/yellow
 			gloves = /obj/item/clothing/gloves/color/yellow
 			ears = /obj/item/radio/headset

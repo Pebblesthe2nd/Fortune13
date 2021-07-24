@@ -276,12 +276,7 @@ GLOBAL_LIST_EMPTY(rubber_toolbox_icons)
 	STR.max_items = 10
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.can_hold = typecacheof(list(
-		/obj/item/clothing/head/helmet/infiltrator,
-		/obj/item/clothing/suit/armor/vest/infiltrator,
 		/obj/item/clothing/under/syndicate/bloodred,
-		/obj/item/clothing/gloves/color/latex/nitrile/infiltrator,
-		/obj/item/clothing/gloves/tackler/combat/insulated/infiltrator,
-		/obj/item/clothing/mask/infiltrator,
 		/obj/item/clothing/shoes/combat/sneakboots,
 		/obj/item/gun/ballistic/automatic/pistol,
 		/obj/item/gun/ballistic/revolver,
@@ -289,11 +284,8 @@ GLOBAL_LIST_EMPTY(rubber_toolbox_icons)
 		))
 
 /obj/item/storage/toolbox/infiltrator/PopulateContents()
-	new /obj/item/clothing/head/helmet/infiltrator(src)
-	new /obj/item/clothing/suit/armor/vest/infiltrator(src)
 	new /obj/item/clothing/under/syndicate/bloodred(src)
 	new /obj/item/clothing/gloves/tackler/combat/insulated/infiltrator(src)
-	new /obj/item/clothing/mask/infiltrator(src)
 	new /obj/item/clothing/shoes/combat/sneakboots(src)
 
 /obj/item/storage/toolbox/proc/rubberify()

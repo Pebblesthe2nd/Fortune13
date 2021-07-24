@@ -4788,16 +4788,6 @@
 /obj/item/clothing/under/syndicate/brotherhood,
 /obj/item/pda/heads/hos,
 /obj/item/storage/briefcase,
-/obj/item/clothing/suit/armor/vest/capcarapace/syndicate{
-	desc = "A sinister looking vest of advanced armor worn over a black and red fireproof jacket. The gold collar and shoulders denote that this belongs to a high ranking officer of some lost prewar army.";
-	name = "old officer's vest"
-	},
-/obj/item/clothing/head/HoS/beret/syndicate{
-	name = "officer's beret"
-	},
-/obj/item/clothing/under/f13/bosformgold_m,
-/obj/item/clothing/under/f13/bosformgold_f,
-/obj/item/clothing/head/f13/boscap,
 /obj/structure/closet/cabinet{
 	anchored = 1;
 	name = "formal attire cabinet"
@@ -15368,12 +15358,7 @@
 /area/f13/bar)
 "aXH" = (
 /obj/structure/closet/cabinet,
-/obj/effect/spawner/bundle/costume/chicken,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /obj/item/dildo,
-/obj/item/clothing/suit/f13/sexymaid,
-/obj/item/clothing/head/helmet/f13/brahmincowboyhat,
-/obj/item/clothing/suit/armor/f13/brahmin_leather_duster,
 /turf/open/floor/wood/f13/old,
 /area/f13/bar)
 "aXN" = (
@@ -19434,8 +19419,6 @@
 /area/f13/wasteland)
 "bnP" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/neck/petcollar,
-/obj/item/clothing/suit/f13/sexymaid,
 /turf/open/floor/wood/f13/old,
 /area/f13/bar)
 "bnQ" = (
@@ -19448,8 +19431,6 @@
 "bnS" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/obj/item/clothing/under/stripeddress,
-/obj/item/clothing/suit/f13/sexymaid,
 /turf/open/floor/wood/f13/old,
 /area/f13/bar)
 "bnT" = (
@@ -19474,8 +19455,6 @@
 /area/f13/city)
 "bnW" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/under/redeveninggown,
-/obj/item/clothing/suit/f13/sexymaid,
 /turf/open/floor/wood/f13/old,
 /area/f13/bar)
 "bnX" = (
@@ -20129,8 +20108,6 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/city)
 "bqP" = (
-/obj/item/clothing/suit/f13/duster,
-/obj/item/clothing/suit/f13/autumn,
 /obj/item/clothing/gloves/f13/leather,
 /obj/item/clothing/head/f13/cowboy,
 /obj/item/clothing/under/f13/cowboyb,
@@ -20139,7 +20116,6 @@
 /obj/item/clothing/head/collectable/police/cos{
 	name = "Chief of Police Hat"
 	},
-/obj/item/clothing/suit/armor/vest/leather,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/glasses/orange,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,

@@ -964,12 +964,10 @@
 /area/awaymission/beach)
 "db" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
-/obj/item/clothing/suit/jacket/letterman_nanotrasen,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "dc" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
-/obj/item/clothing/suit/jacket/letterman_syndie,
 /turf/open/floor/wood,
 /area/awaymission/beach)
 "dd" = (

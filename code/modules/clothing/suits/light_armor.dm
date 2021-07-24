@@ -236,7 +236,13 @@ obj/item/clothing/suit/armor/f13/battlecoat/vault
 	desc = "The robes worn by female seers of the Division."
 	icon_state = "atomwitch"
 	item_state = "atomwitch"
-	armor = list("melee" =1 5, "bullet" = 10, "laser" = 30, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 5, "bullet" = 10, "laser" = 30, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/vest/trench
+	name = "followers trenchcoat"
+	desc = "(IV) A grey and which trench coat with dark blue highlights, on the sides and back it has the unique symbol of the followers. Under said coat is an armor vest, perfect for light weight protection."
+	icon_state = "followerstrench"
+	item_state = "followerstrench"
 
 /*
 /obj/item/clothing/suit/armor/f13/shankduster

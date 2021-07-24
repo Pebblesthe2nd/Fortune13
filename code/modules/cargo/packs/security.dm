@@ -24,18 +24,14 @@
 	name = "Armor Crate"
 	desc = "Three vests of well-rounded, decently-protective armor. Requires Security access to open."
 	cost = 1200
-	contains = list(/obj/item/clothing/suit/armor/vest,
-					/obj/item/clothing/suit/armor/vest,
-					/obj/item/clothing/suit/armor/vest)
+	contains = list(/obj/item/clothing/shoes/combat,)
 	crate_name = "armor crate"
 
 /datum/supply_pack/security/disabler
 	name = "Disabler Crate"
 	desc = "Three stamina-draining disabler weapons. Requires Security access to open."
 	cost = 1300
-	contains = list(/obj/item/gun/energy/disabler,
-					/obj/item/gun/energy/disabler,
-					/obj/item/gun/energy/disabler)
+	contains = list(/obj/item/clothing/shoes/combat,)
 	crate_name = "disabler crate"
 
 /datum/supply_pack/security/forensics
@@ -47,7 +43,7 @@
 					/obj/item/camera,
 					/obj/item/taperecorder,
 					/obj/item/toy/crayon/white,
-					/obj/item/clothing/head/fedora/det_hat)
+					/obj/item/clothing/shoes/combat,)
 	crate_name = "forensics crate"
 	can_private_buy = TRUE
 
@@ -55,18 +51,14 @@
 	name = "Helmets Crate"
 	desc = "Contains three standard-issue brain buckets. Requires Security access to open."
 	cost = 1200
-	contains = list(/obj/item/clothing/head/helmet/sec,
-					/obj/item/clothing/head/helmet/sec,
-					/obj/item/clothing/head/helmet/sec)
+	contains = list(/obj/item/clothing/shoes/combat,)
 	crate_name = "helmet crate"
 
 /datum/supply_pack/security/laser
 	name = "Lasers Crate"
 	desc = "Contains three lethal, high-energy laser guns. Requires Security access to open."
 	cost = 1750
-	contains = list(/obj/item/gun/energy/laser,
-					/obj/item/gun/energy/laser,
-					/obj/item/gun/energy/laser)
+	contains = list(/obj/item/clothing/shoes/combat,)
 	crate_name = "laser crate"
 
 /datum/supply_pack/security/russianclothing
@@ -74,18 +66,9 @@
 	desc = "An old russian crate full of surplus armor that they used to use! Has two sets of bulletproff armor, a few union suits and some warm hats!"
 	contraband = TRUE
 	cost = 5750 // Its basicly sec suits, good boots/gloves
-	contains = list(/obj/item/clothing/suit/armor/navyblue/russian,
-					/obj/item/clothing/suit/armor/navyblue/russian,
+	contains = list(
 					/obj/item/clothing/shoes/combat,
 					/obj/item/clothing/shoes/combat,
-					/obj/item/clothing/head/ushanka,
-					/obj/item/clothing/head/ushanka,
-					/obj/item/clothing/suit/armor/bulletproof,
-					/obj/item/clothing/suit/armor/bulletproof,
-					/obj/item/clothing/head/helmet/alt,
-					/obj/item/clothing/head/helmet/alt,
-					/obj/item/clothing/gloves/tackler/combat/insulated,
-					/obj/item/clothing/gloves/tackler/combat/insulated,
 					/obj/item/clothing/mask/gas,
 					/obj/item/clothing/mask/gas)
 	crate_name = "surplus russian clothing"
@@ -103,10 +86,7 @@
 /datum/supply_pack/security/securitybarriers
 	name = "Security Barrier Grenades"
 	desc = "Stem the tide with four Security Barrier grenades. Requires Security access to open."
-	contains = list(/obj/item/grenade/barrier,
-					/obj/item/grenade/barrier,
-					/obj/item/grenade/barrier,
-					/obj/item/grenade/barrier)
+	contains = list(/obj/item/clothing/shoes/combat,)
 	cost = 2000
 	crate_name = "security barriers crate"
 	can_private_buy = TRUE
@@ -116,17 +96,7 @@
 	desc = "Contains appropriate outfits for the station's private security force. Contains outfits for the Warden, Head of Security, and two Security Officers. Each outfit comes with a rank-appropriate jumpsuit, suit, and beret. Requires Security access to open."
 	cost = 3250
 	contains = list(/obj/item/clothing/under/rank/security/officer/formal,
-					/obj/item/clothing/under/rank/security/officer/formal,
-					/obj/item/clothing/suit/armor/navyblue,
-					/obj/item/clothing/suit/armor/navyblue,
-					/obj/item/clothing/head/beret/sec/navyofficer,
-					/obj/item/clothing/head/beret/sec/navyofficer,
-					/obj/item/clothing/under/rank/security/warden/formal,
-					/obj/item/clothing/suit/armor/vest/warden/navyblue,
-					/obj/item/clothing/head/beret/sec/navywarden,
-					/obj/item/clothing/under/rank/security/head_of_security/formal,
-					/obj/item/clothing/suit/armor/hos/navyblue,
-					/obj/item/clothing/head/beret/sec/navyhos)
+)
 	crate_name = "security clothing crate"
 	can_private_buy = TRUE
 
@@ -153,8 +123,7 @@
 	desc = "This is it. The Bee's Knees. The Creme of the Crop. The Pick of the Litter. The best of the best of the best. The Crown Jewel of Nanotrasen. The Alpha and the Omega of security headwear. Guaranteed to strike fear into the hearts of each and every criminal aboard the station. Also comes with a security gasmask. Requires Security access to open."
 	cost = 6000 //justice comes at a price. An expensive, noisy price.
 	contraband = TRUE
-	contains = list(/obj/item/clothing/head/helmet/justice,
-					/obj/item/clothing/mask/gas/sechailer)
+	contains = list(/obj/item/clothing/shoes/combat,)
 	crate_name = "security clothing crate"
 	can_private_buy = TRUE
 
@@ -162,18 +131,14 @@
 	name = "Stun Batons Crate"
 	desc = "Arm the Civil Protection Forces with three stun batons. Batteries included. Requires Security access to open."
 	cost = 1200
-	contains = list(/obj/item/melee/baton/loaded,
-					/obj/item/melee/baton/loaded,
-					/obj/item/melee/baton/loaded)
+	contains = list(/obj/item/clothing/shoes/combat,)
 	crate_name = "stun baton crate"
 
 /datum/supply_pack/security/taser
 	name = "Taser Crate"
 	desc = "From the depths of stunbased combat, this order rises above, supreme. Contains three hybrid tasers, capable of firing both electrodes and disabling shots. Requires Security access to open."
 	cost = 3500
-	contains = list(/obj/item/gun/energy/e_gun/advtaser,
-					/obj/item/gun/energy/e_gun/advtaser,
-					/obj/item/gun/energy/e_gun/advtaser)
+	contains = list(/obj/item/clothing/shoes/combat,)
 	crate_name = "taser crate"
 
 /datum/supply_pack/security/wall_flash
@@ -191,9 +156,7 @@
 	desc = "Even in space, we can find prey to hunt, this crate contains everthing a fine hunter needs to have a sporting time. This crate needs armory access to open. A true huntter only needs a fine bottle of cognac, a nice coat, some good o' cigars, and of cource a hunting shotgun. "
 	cost = 3500
 	contraband = TRUE
-	contains = list(/obj/item/clothing/head/flatcap,
-					/obj/item/clothing/suit/hooded/wintercoat/captain,
-					/obj/item/reagent_containers/food/drinks/bottle/cognac,
+	contains = list(/obj/item/reagent_containers/food/drinks/bottle/cognac,
 					/obj/item/storage/fancy/cigarettes/cigars/havana,
 					/obj/item/clothing/gloves/color/white,
 					/obj/item/clothing/under/rank/civilian/curator,

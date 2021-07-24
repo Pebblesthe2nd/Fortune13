@@ -317,16 +317,6 @@
 	subcategory = CAT_ARMOR
 	always_availible = FALSE
 
-/datum/crafting_recipe/durathread_vest
-	name = "Makeshift Durathread Armour"
-	result = /obj/item/clothing/suit/armor/vest/durathread
-	reqs = list(/obj/item/stack/sheet/durathread = 6,
-				/obj/item/stack/sheet/leather = 3)
-	time = 50
-	category = CAT_CLOTHING
-	subcategory = CAT_ARMOR
-	always_availible = FALSE
-
 ///////////
 //HELMETS//
 ///////////
@@ -434,18 +424,8 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_ARMOR
 
+
 /*CRAFT rework: removed for balance
-/datum/crafting_recipe/tesla_armor
-	name = "tesla armor"
-	result = /obj/item/clothing/suit/armor/laserproof
-	reqs = list(/obj/item/clothing/suit/armor/f13/metalarmor/reinforced = 1,
-				/obj/item/stack/sheet/mineral/titanium = 1,
-				/obj/item/stack/crafting/electronicparts = 4)
-	tools = list(TOOL_AWORKBENCH, /obj/item/blueprint/armor/tesla)
-	time = 60
-	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
-*//*CRAFT rework: removed for balance
 /datum/crafting_recipe/tesla_helmet
 	name = "tesla helmet"
 	result = /obj/item/clothing/head/helmet/f13/tesla
@@ -893,15 +873,6 @@
 	subcategory = CAT_MISCCLOTHING
 
 /*
-/datum/crafting_recipe/durathread_vest
-	name = "Makeshift Vest"
-	result = /obj/item/clothing/suit/armor/vest/durathread
-	reqs = list( /obj/item/stack/sheet/durathread = 5,
-				/obj/item/stack/sheet/leather = 4)
-	time = 50
-	category = CAT_CLOTHING
-	subcategory = CAT_GENCLOTHES
-
 /datum/crafting_recipe/durathread_helmet
 	name = "Makeshift Helmet"
 	result = /obj/item/clothing/head/helmet/durathread

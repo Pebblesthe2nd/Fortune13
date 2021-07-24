@@ -1993,8 +1993,6 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/tdome/red,
-/obj/item/clothing/head/helmet/thunderdome,
 /obj/item/shield/riot,
 /turf/open/indestructible,
 /area/awaymission/centcomAway/thunderdome)
@@ -2020,8 +2018,6 @@
 /obj/structure/rack,
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/clothing/suit/armor/tdome/green,
-/obj/item/clothing/head/helmet/thunderdome,
 /obj/item/shield/riot,
 /turf/open/indestructible,
 /area/awaymission/centcomAway/thunderdome)
@@ -2248,8 +2244,6 @@
 /area/awaymission/centcomAway/hangar)
 "mQ" = (
 /obj/structure/safe/floor,
-/obj/item/clothing/under/rank/centcom/officer,
-/obj/item/clothing/suit/det_suit,
 /turf/open/indestructible,
 /area/awaymission/centcomAway/general)
 "mR" = (

@@ -556,7 +556,7 @@
 	id = "reactive_armour"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 10000, /datum/material/diamond = 5000, /datum/material/uranium = 8000, /datum/material/silver = 4500, /datum/material/gold = 5000)
-	build_path = /obj/item/reactive_armour_shell
+	build_path = /obj/item/clothing/suit/armor/medium/scrapchest
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING
 
@@ -566,7 +566,7 @@
 	id = "knight_armour"
 	build_type = AUTOLATHE
 	materials = list(MAT_CATEGORY_RIGID = 10000)
-	build_path = /obj/item/clothing/suit/armor/riot/knight/greyscale
+	build_path = /obj/item/clothing/suit/armor/medium/scrapchest
 	category = list("Imported")
 
 /datum/design/knight_helmet
@@ -575,7 +575,7 @@
 	id = "knight_helmet"
 	build_type = AUTOLATHE
 	materials = list(MAT_CATEGORY_RIGID = 5000)
-	build_path = /obj/item/clothing/head/helmet/knight/greyscale
+	build_path = /obj/item/clothing/suit/armor/medium/scrapchest
 	category = list("Imported")
 
 /////////////////////////////////////////

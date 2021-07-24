@@ -1645,8 +1645,6 @@
 /area/awaymission/research/interior/security)
 "dG" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/riot,
-/obj/item/clothing/head/helmet/riot,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -1852,10 +1850,6 @@
 /area/awaymission/research/interior/security)
 "dV" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/suit/armor/vest,
-/obj/item/clothing/head/helmet,
-/obj/item/clothing/head/helmet,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -2031,7 +2025,6 @@
 /area/awaymission/research/interior/security)
 "eq" = (
 /obj/structure/rack,
-/obj/item/clothing/suit/armor/laserproof,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -4099,7 +4092,6 @@
 	read_only = 1
 	},
 /obj/item/dnainjector/antenna,
-/obj/item/clothing/suit/armor/vest,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/research/interior/secure)
 "hU" = (

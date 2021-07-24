@@ -56,14 +56,7 @@
 	icon_state = "tanleather"
 	item_state = "det_suit"
 	body_parts_covered = CHEST|GROIN|LEGS
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
-/obj/item/clothing/suit/f13/battlecruiser //Do we have Star Craft here as well?!
-	name = "captain's coat"
-	desc = "(II) Battlecruiser operational!"
-	icon_state = "battlecruiser"
-	item_state = "hostrench"
-	armor = list("tier" = 2, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/f13/cowboybvest //Originally cowboy stuff by Nienhaus
 	name = "brown vest"
@@ -78,7 +71,6 @@
 	desc = "(I) A grey vest, adorned with bartenders arm cuffs, a classic western look."
 	icon_state = "westender"
 	item_state = "lb_suit"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/f13/cowboygvest
 	name = "grey vest"
@@ -86,7 +78,6 @@
 	icon_state = "cowboygvest"
 	item_state = "gy_suit"
 	body_parts_covered = CHEST|GROIN|LEGS
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 16, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/ghost_sheet
 	name = "ghost sheet"
@@ -105,14 +96,12 @@
 	desc = "(I) Only a monk would find this robe nice and comfortable."
 	icon_state = "robe_liz"
 	item_state = "brownjsuit"
-	armor = list("tier" = 1)
 
 /obj/item/clothing/suit/f13/mantle_liz
 	name = "hide mantle"
 	desc = "(I) A rather grisly selection of cured hides and skin, sewn together to form a ragged mantle."
 	icon_state = "mantle_liz"
 	item_state = "det_suit"
-	armor = list("tier" = 1)
 
 /obj/item/clothing/suit/f13/mfp //Mad Max 1 1979 babe!
 	name = "MFP jacket"
@@ -150,7 +139,7 @@
 
 /obj/item/clothing/suit/f13/sheriff
 	name = "sheriff duster"
-	desc = "(III) A long brown leather overcoat.<br>A powerful accessory of a respectful sheriff, bringer of justice."
+	desc = "A long brown leather overcoat.<br>A powerful accessory of a respectful sheriff, bringer of justice."
 	icon_state = "sheriff"
 	item_state = "det_suit"
 	armor = list("tier" = 3, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
@@ -158,15 +147,14 @@
 
 /obj/item/clothing/suit/f13/banker
 	name = "bankers tailcoat"
-	desc = "(I) A long black jacket, finely crafted black leather and smooth finishings make this an extremely fancy piece of rich-mans apparel."
+	desc = "A long black jacket, finely crafted black leather and smooth finishings make this an extremely fancy piece of rich-mans apparel."
 	icon_state = "banker"
 	item_state = "banker"
-	armor = list("tier" = 1, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 
 /obj/item/clothing/suit/f13/autumn //Based of Colonel Autumn's uniform.
 	name = "tan trenchcoat"
-	desc = "(III) A heavy-duty tan trenchcoat typically worn by pre-War generals."
+	desc = "A heavy-duty tan trenchcoat typically worn by pre-War generals."
 	icon_state = "autumn"
 	item_state = "autumn"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
@@ -174,18 +162,11 @@
 
 /obj/item/clothing/suit/f13/hubologist
 	name = "hubologist robe"
-	desc = "(I) A black robe worn by Adepts of Hubology Studies.<br>Beware - the spirits of the dead are all around us!"
+	desc = "A black robe worn by Adepts of Hubology Studies.<br>Beware - the spirits of the dead are all around us!"
 	icon_state = "hubologist"
 	item_state = "wcoat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR
-	armor = list("tier" = 1)
-
-/obj/item/clothing/suit/f13/sexymaid
-	name = "sexy maid outfit"
-	desc = "A maid outfit that shows just a little more skin than needed for cleaning duties."
-	icon_state = "sexymaid_s"
-	item_state = "sexymaid_s"
-	body_parts_covered = CHEST
+	armor = list("energy" = 0, "bomb" = 0, "bio" = 20, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/f13/blacksmith_apron
 	name = "blacksmith apron"

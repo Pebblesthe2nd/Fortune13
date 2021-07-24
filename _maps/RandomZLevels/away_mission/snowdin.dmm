@@ -3294,9 +3294,6 @@
 /area/awaymission/snowdin/post/garage)
 "hG" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/hooded/wintercoat/captain{
-	name = "overseer's winter coat"
-	},
 /obj/item/clothing/shoes/winterboots,
 /obj/item/key,
 /obj/effect/decal/cleanable/dirt,

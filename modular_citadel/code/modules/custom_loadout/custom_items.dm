@@ -56,19 +56,6 @@
 	fitting_swords = list(/obj/item/toy/darksabre)
 	starting_sword = /obj/item/toy/darksabre
 
-/obj/item/clothing/suit/armor/vest/darkcarapace
-	name = "Dark Armor"
-	desc = "A dark, non-functional piece of armor sporting a red and black finish."
-	icon = 'icons/obj/custom.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/custom_w.dmi'
-	icon_state = "darkcarapace"
-	item_state = "darkcarapace"
-	blood_overlay_type = "armor"
-	dog_fashion = /datum/dog_fashion/back
-	mutantrace_variation = NONE
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
-
 /obj/item/lighter/gold
 	name = "engraved zippo"
 	desc = "A shiny and relatively expensive zippo lighter. There's a small etched in verse on the bottom that reads, 'No Gods, No Masters, Only Man.'"
