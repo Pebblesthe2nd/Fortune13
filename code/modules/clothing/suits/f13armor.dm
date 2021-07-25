@@ -101,7 +101,7 @@
 	desc = "A set of polished plates formed together to provide effective protection."
 	icon_state = "metal_chestplate2"
 	item_state = "metal_chestplate2"
-    armor = list("melee" = 50, "bullet" = 40, "laser" = 50, "energy" = 50, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 50, "energy" = 50, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 0)
 	slowdown = 0.4
 	strip_delay = 10
 
@@ -678,7 +678,8 @@
 	icon_state = "sulphitearmor"
 	item_state = "sulphitearmor"
 	armor = list("melee" = 65, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
-    slowdown = 0.2
+	slowdown = 0.2
+
 /obj/item/clothing/suit/toggle/armor
 	body_parts_covered = CHEST|GROIN
 	cold_protection = CHEST|GROIN
@@ -931,7 +932,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	desc = "The robes worn by female seers of the Division."
 	icon_state = "atomwitch"
 	item_state = "atomwitch"
-	armor = list("melee" =1 5, "bullet" = 10, "laser" = 30, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
+	armor = list("melee" = 5, "bullet" = 10, "laser" = 30, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 100, "fire" = 60, "acid" = 20)
 
 /obj/item/clothing/suit/armor/f13/harbingermantle
 	name = "Harbinger's Mantle"
@@ -999,7 +1000,7 @@ obj/item/clothing/suit/armor/f13/exile/cust0m
 	icon_state = "mutie_metal_armour"
 	item_state = "mutie_metal_armour"
 	armor = list("melee" = 65, "bullet" = 45, "laser" = 30, "energy" = 30, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 30, "acid" = 20)
-    slowdown = 0.2
+	slowdown = 0.2
 
 /obj/item/clothing/suit/armor/f13/mutant/metal/reinforced
 	name = "mutant armour"

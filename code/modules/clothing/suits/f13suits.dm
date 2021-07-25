@@ -1,4 +1,4 @@
-ALL PATREON/CUSTOM/DONOR STUFF (EVEN IF SUIT AND NOT ARMOR) TO GO INTO f13armor.dm
+//ALL PATREON/CUSTOM/DONOR STUFF (EVEN IF SUIT AND NOT ARMOR) TO GO INTO f13armor.dm
 /*FOR REFERENCE
 /obj/item/clothing/suit
 	icon = 'icons/obj/clothing/suits.dmi'
