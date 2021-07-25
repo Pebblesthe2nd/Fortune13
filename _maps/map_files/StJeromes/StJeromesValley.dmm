@@ -17684,7 +17684,7 @@
 /area/f13/casino)
 "bca" = (
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat,
-/obj/item/clothing/suit/armor/f13/rustedcowboy,
+/obj/item/clothing/suit/armor/light/rustedcowboy,
 /turf/open/indestructible/ground/outside/snow,
 /area/f13/underground/mountain)
 "bcb" = (

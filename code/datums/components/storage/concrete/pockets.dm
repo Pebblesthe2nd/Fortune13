@@ -35,6 +35,16 @@
 	/obj/item/reagent_containers/food/snacks/sugarcookie,
 	/obj/item/key/collar))
 
+/datum/component/storage/concrete/pockets/binoculars
+	max_items = 1
+
+/datum/component/storage/concrete/pockets/binoculars/Initialize()
+	. = ..()
+	can_hold = typecacheof(list(
+	/obj/item/binoculars,
+	))
+
+
 /datum/component/storage/concrete/pockets/tiny
 	max_items = 1
 	max_w_class = WEIGHT_CLASS_TINY

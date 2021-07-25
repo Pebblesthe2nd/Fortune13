@@ -5,13 +5,12 @@
 // WASTELAND //
 ///////////////
 
-/obj/item/clothing/suit/armor/light/tribal
-	name = "tribal armor"
-	desc = "A set of armor made of gecko hides.<br>It's pretty good for makeshift armor."
-	icon_state = "tribal"
-	item_state = "tribal"
-	armor = list("melee" = 30, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 25, "rad" = 5, "fire" = 30, "acid" = 0)
-	flags_inv = HIDEJUMPSUIT
+/obj/item/clothing/suit/armor/light/duster
+	name = "duster"
+	desc = "A long brown leather overcoat.<br>A powerful accessory of fearsome bounty hunter."
+	icon_state = "duster"
+	item_state = "det_suit"
+	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 5, "fire" = 20, "acid" = 5)
 
 /obj/item/clothing/suit/armor/light/chitinarmor
 	name = "insect chitin armor"
@@ -20,56 +19,87 @@
 	item_state = "insect_armor"
 	armor = list("melee" = 25, "bullet" = 15, "laser" = 20, "energy" = 20, "bomb" = 15, "bio" = 50, "rad" = 50, "fire" = 70, "acid" = 80)
 
-/obj/item/clothing/suit/armor/light/leatherarmor
-	name = "leather armor"
-	desc = "Your basic all leather apparel. Finely crafted from tanned brahmin hide."
-	icon_state = "leather_armor"
-	item_state = "leather_armor"
-	armor = list("melee" = 30, "bullet" = 10, "laser" = 5, "energy" = 5, "bomb" = 10, "bio" = 20, "rad" = 5, "fire" = 30, "acid" = 10)
+/obj/item/clothing/suit/armor/light/tribal
+	name = "tribal armor"
+	desc = "Soft armor made from layered dog hide strips glued together.<br>It's pretty good for makeshift armor."
+	icon_state = "tribal"
+	item_state = "tribal"
+	armor = list("melee" = 20, "bullet" = 5, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 25, "rad" = 5, "fire" = 30, "acid" = 0)
+	flags_inv = HIDEJUMPSUIT
+
+/obj/item/clothing/suit/armor/light/rustedcowboy
+	name = "rusted cowboy outfit"
+	desc = "A weather treated leather cowboy outfit.  Yeehaw Pard'!"
+	icon_state = "rusted_cowboy"
+	item_state = "rusted_cowboy"
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10,)
+
+/obj/item/clothing/suit/armor/light/flakvest
+	name = "ancient flak vest"
+	desc = "Poorly maintained, this patched vest will still stop bullets sometimes, but don't expect anything else."
+	icon = 'icons/fallout/clothing/armorlight.dmi'
+	icon_state = null
+	item_state = "vestflak"
+	armor = list("melee" = 0, "bullet" = 35, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/suit/armor/light/kevlarvest
+	name = "kevlar vest"
+	desc = "Worn but serviceable, the vest is effecient against projectiles and marginal against most other threats."
+	icon = 'icons/fallout/clothing/armorlight.dmi'
+	icon_state = null
+	item_state = "vestkevlar"
+	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/suit/armor/light/punk
+	name = "armor kit"
+	desc = "A few pieces of metal strapped to protect vital parts against sudden lead poisoning."
+	icon = 'icons/fallout/clothing/suits.dmi'
+	icon_state = "punkit"
+	item_state = "punkit" 
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 10, "energy" = 5, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/suit/armor/light/kit
+	name = "armor kit"
+	desc = "Separate armor parts you can wear over your clothing,  giving basic protection against bullets entering your organs."
+	icon = 'icons/fallout/clothing/suits.dmi'
+	icon_state = "armorkit"
+	item_state = "armorkit"
+	armor = list("melee" = 10, "bullet" = 25, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/armor/light/leatherplates
 	name = "hardened leather plates"
-	desc = "Gecko hide boiled in corn oil gives a hard but brittle material to make crude armor plating from."
+	desc = "Tanned hide boiled in corn oil gives a hard but brittle material to make crude armor plating from. Made in a similar style to pre-war motorcyle football gear, this armor provides a decent defense against impacts."
 	icon_state = "leather_armor_2"
 	item_state = "leather_armor_2"
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+	armor = list("melee" = 20, "bullet" = 25, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0)
 
-/obj/item/clothing/suit/armor/light/duster
-	name = "duster"
-	desc = "A long brown leather overcoat.<br>A powerful accessory of fearsome bounty hunter."
-	icon_state = "duster"
-	item_state = "det_suit"
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 20, "rad" = 5, "fire" = 20, "acid" = 5)
+/obj/item/clothing/suit/armor/light/geckoarmor
+	name = "gecko leather armor"
+	desc = "leather armor reinforced with durable gecko hides, giving a lot better protection against the elements."
+	icon_state = "leather_armor"
+	item_state = "leather_armor"
+	armor = list("melee" = 25, "bullet" = 20, "laser" = 15, "energy" = 10, "bomb" = 10, "bio" = 5, "rad" = 10, "fire" = 30, "acid" = 10)
+
+/obj/item/clothing/suit/armor/light/leatherarmor
+	name = "leather armor"
+	desc = "Comfortable suit of tanned brahmin leather leaving one arm mostly bare."
+	icon_state = "leather_armor"
+	item_state = "leather_armor"
+	armor = list("melee" = 25, "bullet" = 15, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 
 /obj/item/clothing/suit/armor/light/brahminduster
 	name = "brahmin leather duster"
 	desc = "A duster fashioned with tanned brahmin hide. It appears to be more durable than a normal duster. The leather is laser resistant."
 	icon_state = "brahmin_leather_duster"
 	item_state = "brahmin_leather_duster"
-	armor = list("melee" = 20, "bullet" = 15, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 5, "fire" = 25, "acid" = 5)
-
-/obj/item/clothing/suit/armor/light/punk
-	name = "armor kit"
-	desc = "A couple of armor parts that can be worn over the clothing for moderate protection against the dangers of wasteland.<br>Do you feel lucky now? Well, do ya, punk?"
-	icon = 'icons/fallout/clothing/suits.dmi'
-	icon_state = "punkit"
-	item_state = "punkit" 
-	armor = list("melee" = 10, "bullet" = 25, "laser" = 15, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
-/obj/item/clothing/suit/armor/light/kit
-	name = "armor kit"
-	desc = "Separate armor parts you can wear over the clothing to get the most basic protection from the dangers of wasteland.<br>It is unable to reflect laser beams and probably won't shield you from a random bullet, but it sure is better than going into the battle without any armor at all."
-	icon = 'icons/fallout/clothing/suits.dmi'
-	icon_state = "armorkit"
-	item_state = "armorkit"
-	armor = list("melee" = 10, "bullet" = 25, "laser" = 15, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 20, "bullet" = 15, "laser" = 25, "energy" = 20, "bomb" = 15, "bio" = 10, "rad" = 5, "fire" = 25, "acid" = 0)
 
 /obj/item/clothing/suit/armor/light/leatherjacket
 	name = "leather jacket"
 	icon_state = "leather_jacket"
 	item_state = "leather_jacket"
-	desc = "A black, heavy leather jacket."
-	armor = list("melee" = 15, "bullet" = 5, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 15, "rad" = 0, "fire" = 10, "acid" = 0)
+	desc = "A very stylish pre-War black, heavy leather jacket. Not always a good choice to wear this the scorching sun of the desert, and one of the arms has been torn off"
+	armor = list("melee" = 15, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 0, "bio" = 5, "rad" = 0, "fire" = 5, "acid" = 0)
 
 /obj/item/clothing/suit/armor/light/leatherjacketmk2
 	name = "thick leather jacket"
@@ -87,18 +117,18 @@
 
 /obj/item/clothing/suit/armor/light/vaquero
 	name = "vaquero suit"
-	desc = "An ornate suit worn by Mexican gunfighters in the Old West, padded with leather for extra protection."
+	desc = "An ornate suit popularized by traders from the south, using plenty of silver thread wich serves as decoration and also reflects energy very well, useful when facing the deset sun or a rogue Eyebot."
 	icon_state = "vaquero"
 	item_state = "vaquero"
-	armor = list("melee" = 20, "bullet" = 10, "laser" = 0, "energy" = 0, "bomb" = 5, "bio" = 20, "rad" = 0, "fire" = 25, "acid" = 10)
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 25, "energy" = 25, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0)
 	flags_inv = HIDEJUMPSUIT
 
 /obj/item/clothing/suit/armor/light/battlecoat
 	name = "battlecoat"
-	desc = "A heavy padded leather coat, worn by pre-War bomber pilots in the past and post-War zeppelin pilots in the future."
+	desc = "A heavy padded coat that distributes heat efficiently, designed to protect pre-War bomber pilots from anti-aircraft lasers."
 	icon_state = "battlecoat"
 	item_state = "battlecoat"
-	armor = list("melee" = 5, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 5, "rad" = 10, "fire" = 20, "acid" = 10)
+	armor = list("melee" = 5, "bullet" = 5, "laser" = 30, "energy" = 25, "bomb" = 10, "bio" = 0, "rad" = 10, "fire" = 30, "acid" = 5)
 	strip_delay = 30
 	icon = 'icons/fallout/clothing/suits.dmi'
 
@@ -107,14 +137,9 @@
 	desc = "An oversized poncho, made to fit the frame of a super mutant. Maybe he's the big ranger with an iron on his hip?"
 	icon_state = "mutie_poncho"
 	item_state = "mutie_poncho"
-	armor = list("melee" = 20, "bullet" = 10, "laser" = 0, "energy" = 0, "bomb" = 5, "bio" = 20, "rad" = 0, "fire" = 25, "acid" = 5)
+	armor = list("melee" = 20, "bullet" = 10, "laser" = 0, "energy" = 0, "bomb" = 5, "bio" = 20, "rad" = 0, "fire" = 25, "acid" = 5,)
 
-/obj/item/clothing/suit/armor/f13/rustedcowboy
-	name = "rusted cowboy outfit"
-	desc = "A weather treated leather cowboy outfit.  Yeehaw Pard'!"
-	icon_state = "rusted_cowboy"
-	item_state = "rusted_cowboy"
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 35, "bio" = 40, "rad" = 10, "fire" = 60, "acid" = 10,)
+
 
 
 ////////////
@@ -146,7 +171,7 @@
 	icon_state = "legexplorer"
     armor = list("melee" = 35, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 0)
     slowdown = -0.05
-
+	pocket_storage_component_path = /datum/component/storage/concrete/pockets/binoculars
 
 /////////
 // NCR //

@@ -38197,7 +38197,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "kdw" = (
-/obj/item/clothing/suit/armor/f13/rustedcowboy,
+/obj/item/clothing/suit/armor/light/rustedcowboy,
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
@@ -42139,7 +42139,7 @@
 /area/f13/bunker)
 "pTo" = (
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat,
-/obj/item/clothing/suit/armor/f13/rustedcowboy,
+/obj/item/clothing/suit/armor/light/rustedcowboy,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "pTK" = (

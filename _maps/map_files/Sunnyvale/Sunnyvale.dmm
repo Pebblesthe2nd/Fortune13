@@ -34708,13 +34708,13 @@
 "bTK" = (
 /obj/structure/rack,
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat,
-/obj/item/clothing/suit/armor/f13/rustedcowboy,
+/obj/item/clothing/suit/armor/light/rustedcowboy,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bTL" = (
 /obj/structure/rack,
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat,
-/obj/item/clothing/suit/armor/f13/rustedcowboy,
+/obj/item/clothing/suit/armor/light/rustedcowboy,
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bTM" = (
@@ -34726,7 +34726,7 @@
 "bTN" = (
 /obj/structure/rack,
 /obj/item/clothing/head/helmet/f13/rustedcowboyhat,
-/obj/item/clothing/suit/armor/f13/rustedcowboy,
+/obj/item/clothing/suit/armor/light/rustedcowboy,
 /turf/open/floor/wood/f13/old,
 /area/f13/desert)
 "bTO" = (
