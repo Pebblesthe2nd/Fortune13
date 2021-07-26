@@ -99,7 +99,7 @@
 	icon_state = "rangercent"
 	item_state = "rangercent"
 	armor = list("melee" = 65, "bullet" = 50, "laser" = 30, "energy" = 30, "bomb" = 35, "bio" = 30, "rad" = 25, "fire" = 50, "acid" = 10)
-    slowdown = 0.05
+	slowdown = 0.05
 
 /obj/item/clothing/suit/armor/heavy/legion/legate
 	name = "legion legate armor"
@@ -142,7 +142,7 @@
 	desc = "A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knights. It bears a red stripe."
 	icon_state = "brotherhood_armor_knight"
 	item_state = "brotherhood_armor_knight"
-    armor = list("melee" = 55, "bullet" = 50, "laser" = 40, "energy" = 50, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 60, "acid" = 0)
+	armor = list("melee" = 55, "bullet" = 50, "laser" = 40, "energy" = 50, "bomb" = 40, "bio" = 40, "rad" = 40, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/suit/armor/heavy/knight/senior
 	name = "brotherhood senior knight armor"

@@ -22582,7 +22582,6 @@
 	},
 /area/f13/city/museum)
 "brg" = (
-/obj/structure/closet/l3closet/janitor,
 /obj/item/lightreplacer,
 /turf/open/floor/plasteel/f13/vault_floor/neutral/neutralsolid,
 /area/f13/vault)

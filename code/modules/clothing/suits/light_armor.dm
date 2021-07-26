@@ -3,7 +3,43 @@
 
 ///////////////
 // WASTELAND //
-///////////////
+//////////////
+
+/obj/item/clothing/suit/samurai
+	name = "Samurai outfit"
+	desc = "(II) An outfit used by traditional japanese warriors."
+	icon_state = "samurai"
+	item_state = "samurai"
+	armor = list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/suit/f13/lonesome
+	name = "lonesome duster"
+	desc = "A blue leather coat with the number 21 on the back.<br><i>If war doesn't change, men must change, and so must their symbols.</i><br><i>Even if there is nothing at all, know what you follow.</i>"
+	icon_state = "courier"
+	item_state = "suit-command"
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
+
+/obj/item/clothing/suit/f13/autumn //Based of Colonel Autumn's uniform.
+	name = "tan trenchcoat"
+	desc = "A heavy-duty tan trenchcoat typically worn by pre-War generals."
+	icon_state = "autumn"
+	item_state = "autumn"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
+	armor = list("melee" = 30, "bullet" = 20, "laser" = 30, "energy" = 20, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/suit/f13/mfp //Mad Max 1 1979 babe!
+	name = "MFP jacket"
+	desc = "A Main Force Patrol leather jacket.<br>Offbeat."
+	icon_state = "mfp"
+	item_state = "hostrench"
+	armor = list("melee" = 20, "bullet" = 10, "laser" = 0, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0)
+
+/obj/item/clothing/suit/f13/veteran
+	name = "merc veteran coat"
+	desc = "A blue leather coat adorned with war medals.<br>This type of outfit is common for professional mercenaries and bounty hunters."
+	icon_state = "veteran"
+	item_state = "suit-command"
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
 
 /obj/item/clothing/suit/armor/light/duster
 	name = "duster"
@@ -150,15 +186,15 @@
 	name = "legion recruit armor"
 	desc = "Legion recruit armor is a common light armor, clearly inspired by gear worn by old world football players and baseball catchers, much of it restored ancient actual sports equipment, other newly made from mostly leather, tanned and boiled in oil."
 	icon_state = "legrecruit"
-    armor = list("melee" = 35, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 0)
-    slowdown = 0
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 0)
+	slowdown = 0
 
 /obj/item/clothing/suit/armor/light/legion/prime
 	name = "legion prime armor"
 	desc = "It's a legion prime armor, the warrior has been granted some additional protective pieces to add to his suit."
 	icon_state = "legprime"
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 0)
-    slowdown = 0
+	slowdown = 0
 
 /obj/item/clothing/suit/armor/light/legion/recruit/slavemaster
 	name = "slavemaster armor"
@@ -169,8 +205,8 @@
 	name = "legion explorer armor"
 	desc = "Light armor with layered strips of laminated linen and leather and worn with a large pouch for storing your binoculars."
 	icon_state = "legexplorer"
-    armor = list("melee" = 35, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 0)
-    slowdown = -0.05
+	armor = list("melee" = 35, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 0)
+	slowdown = -0.05
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/binoculars
 
 /////////
@@ -183,7 +219,7 @@
 	icon_state = "duster_recon"
 	item_state = "duster_recon"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 25, "rad" = 15, "fire" = 35, "acid" = 5)
-    slowdown = -0.025
+	slowdown = -0.025
 
 /obj/item/clothing/suit/armor/light/rangerrig
 	name = "chest gear harness"
@@ -191,7 +227,7 @@
 	icon_state = "r_gear_rig"
 	item_state = "r_gear_rig"
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 10, "fire" = 25, "acid" = 0)
-    slowdown = -0.05
+	slowdown = -0.05
 
 /obj/item/clothing/suit/armor/light/trailranger
 	name = "ranger vest"
@@ -199,7 +235,7 @@
 	icon_state = "cowboyrang"
 	item_state = "cowboyrang"
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 10, "fire" = 30, "acid" = 0)
-    slowdown = -0.05
+	slowdown = -0.05
 
 
 //////////////////////////

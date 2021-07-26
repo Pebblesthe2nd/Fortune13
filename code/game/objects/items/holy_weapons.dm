@@ -101,21 +101,6 @@
 	new /obj/item/clothing/head/helmet/chaplain(src)
 
 
-// CITADEL CHANGES: More Variants
-/obj/item/storage/box/holy/teutonic
-	name = "Teutonic Kit"
-
-/obj/item/storage/box/holy/teutonic/PopulateContents() // It just works
-	pick(new /obj/item/clothing/head/helmet/chaplain/bland/horned(src), new /obj/item/clothing/head/helmet/chaplain/bland/winged(src))
-
-/obj/item/storage/box/holy/hospitaller
-	name = "Hospitaller Kit"
-
-/obj/item/storage/box/holy/hospitaller/PopulateContents()
-	new /obj/item/clothing/head/helmet/chaplain/bland(src)
-
-// CITADEL CHANGES ENDS HERE
-
 /obj/item/storage/box/holy/student
 	name = "Profane Scholar Kit"
 

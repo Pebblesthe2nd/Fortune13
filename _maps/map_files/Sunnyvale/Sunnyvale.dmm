@@ -39117,7 +39117,6 @@
 	},
 /area/f13/desert)
 "wBW" = (
-/obj/structure/closet/l3closet/virology,
 /obj/effect/spawner/lootdrop/f13/medical/vault/equipment,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluechess"

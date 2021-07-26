@@ -78,21 +78,22 @@
 	slowdown = 0
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	allowed = null
-	strip_delay = 0
+	strip_delay = 10
 
 
 //Light armor. 15-30 in its primary value, slowdown 0.05
 /obj/item/clothing/suit/armor/light
 	name = "light armor template"
 	slowdown = 0.05
+	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/melee/smith,)
 
 /obj/item/clothing/suit/armor/light/legion
 	slowdown = 0
-	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/melee/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 
 /obj/item/clothing/suit/armor/light/tribal
 	slowdown = 0
-	allowed = list(/obj/item/melee/onehanded, /obj/item/melee/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/melee/onehanded, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 
 
 // Medium armor. 35-45 in its primary value, slowdown 0.1
@@ -104,18 +105,18 @@
 
 /obj/item/clothing/suit/armor/medium/legion
 	slowdown = 0.075
-	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/melee/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 
 /obj/item/clothing/suit/armor/medium/tribal
 	slowdown = 0.075
-	allowed = list(/obj/item/melee/onehanded, /obj/item/melee/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/melee/onehanded, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 
 
 // Heavy armor. 50-65 in its primary value, slowdown 0.15
 /obj/item/clothing/suit/armor/heavy
 	name = "heavy armor template"
 	slowdown = 0.15
-	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/melee/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	strip_delay = 50
 
 /obj/item/clothing/suit/armor/heavy/legion
