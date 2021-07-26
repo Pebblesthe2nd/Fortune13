@@ -5,12 +5,12 @@
 // WASTELAND //
 //////////////
 
-/obj/item/clothing/suit/samurai
-	name = "Samurai outfit"
-	desc = "(II) An outfit used by traditional japanese warriors."
+/obj/item/clothing/suit/armor/light/samurai
+	name = "wasteland samurai armor"
+	desc = "a mad attempt to recreate armor based of images of japanese samurai, using broken bicycles and pieces of furniture."
 	icon_state = "samurai"
 	item_state = "samurai"
-	armor = list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/f13/lonesome
 	name = "lonesome duster"
@@ -73,7 +73,6 @@
 /obj/item/clothing/suit/armor/light/flakvest
 	name = "ancient flak vest"
 	desc = "Poorly maintained, this patched vest will still stop bullets sometimes, but don't expect anything else."
-	icon = 'icons/fallout/clothing/armorlight.dmi'
 	icon_state = null
 	item_state = "vestflak"
 	armor = list("melee" = 0, "bullet" = 35, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
@@ -81,7 +80,6 @@
 /obj/item/clothing/suit/armor/light/kevlarvest
 	name = "kevlar vest"
 	desc = "Worn but serviceable, the vest is effecient against projectiles and marginal against most other threats."
-	icon = 'icons/fallout/clothing/armorlight.dmi'
 	icon_state = null
 	item_state = "vestkevlar"
 	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
