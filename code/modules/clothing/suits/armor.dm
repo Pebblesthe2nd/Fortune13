@@ -69,6 +69,11 @@
 		var/tier_ar = round(round_armor / 10) // Tier 7 would be 200/100 = 20, Tier 11 = 40
 		durability_threshold = tier_ar
 
+// Plates are good against melee and ballistics equally, bad vs energy lasers
+// Leather/soft armor is good vs melee and lasers, bad vs bullets
+// Coat style armor is good for allround protection but excels at none. (note plated with unarmored duster over is still plated.)
+// Kevlar is great vs bullets and bad vs everything else, the synthetic fabric melts terribly when exposed to acid
+// Mix can vary wildly but usually has some glaring strongpoints and weakspots
 
 //Suits. 0-10 in its primary value, slowdown 0, various utility
 /obj/item/clothing/suit
@@ -80,11 +85,11 @@
 	allowed = null
 	strip_delay = 10
 
-
 //Light armor. 15-30 in its primary value, slowdown 0.05
 /obj/item/clothing/suit/armor/light
 	name = "light armor template"
 	icon = 'icons/fallout/clothing/suit-lightarmor.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/suits-lightarmor.dmi'
 	slowdown = 0.05
 	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/melee/smith,)
 
@@ -101,7 +106,7 @@
 /obj/item/clothing/suit/armor/medium
 	name = "medium armor template"
 	icon = 'icons/fallout/clothing/suit-mediumarmor.dmi'
-	mob_overlay_icon = 'icons/fallout/onmob/clothing/suit.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/suits-mediumarmor.dmi'
 	slowdown = 0.1
 	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/melee/smith,)
 	strip_delay = 40
@@ -119,6 +124,7 @@
 /obj/item/clothing/suit/armor/heavy
 	name = "heavy armor template"
 	icon = 'icons/fallout/clothing/suit-heavyarmor.dmi'
+	mob_overlay_icon = 'icons/fallout/onmob/clothing/suits-heavyarmor.dmi'
 	slowdown = 0.15
 	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	strip_delay = 50

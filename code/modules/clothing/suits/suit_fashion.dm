@@ -88,94 +88,9 @@
 	item_state = "purplebartenderapron"
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
-
-
-
-/obj/item/clothing/suit/poncho
-	name = "poncho"
-	desc = "(I) Your classic, non-racist poncho."
-	icon_state = "classicponcho"
-	item_state = "classicponcho"
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
-/obj/item/clothing/suit/poncho/green
-	name = "green poncho"
-	desc = "(I) Your classic, non-racist poncho. This one is green."
-	icon_state = "greenponcho"
-	item_state = "greenponcho"
-
-/obj/item/clothing/suit/poncho/red
-	name = "red poncho"
-	desc = "(I) Your classic, non-racist poncho. This one is red."
-	icon_state = "redponcho"
-	item_state = "redponcho"
-
-
-/obj/item/clothing/suit/whitedress
-	name = "white dress"
-	desc = "(I) A fancy white dress."
-	icon_state = "white_dress"
-	item_state = "w_suit"
-	flags_inv = HIDEJUMPSUIT|HIDESHOES
-	mutantrace_variation = NONE
-
-
-
-
-/obj/item/clothing/suit/hooded/bloated_human	//OH MY GOD WHAT HAVE YOU DONE!?!?!?
-	name = "bloated human suit"
-	desc = "(I) A horribly bloated suit made from human skins."
-	icon_state = "lingspacesuit"
-	item_state = "labcoat"
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS|FEET|HANDS
-	actions_types = list(/datum/action/item_action/toggle_human_head)
-	hoodtype = /obj/item/clothing/head/hooded/human_head
-	mutantrace_variation = NONE
-
-/obj/item/clothing/head/hooded/human_head
-	name = "bloated human head"
-	desc = "(I) A horribly bloated and mismatched human head."
-	icon_state = "lingspacehelmet"
-	body_parts_covered = HEAD
-	flags_cover = HEADCOVERSEYES
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-
-/obj/item/clothing/suit/ran
-	name = "shikigami costume"
-	desc = "(I) A costume that looks like a certain shikigami, is super fluffy."
-	icon_state = "ran_suit"
-	item_state = "ran_suit"
-	flags_inv = HIDEJUMPSUIT|HIDETAUR
-	heat_protection = CHEST|GROIN|LEGS //fluffy tails!
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
-/obj/item/clothing/head/ran
-	name = "shikigami hat"
-	desc = "(I) A hat that looks like it keeps any fluffy ears contained super warm, has little charms over it."
-	icon_state = "ran_hat"
-	item_state = "ran_hat"
-	flags_inv = HIDEEARS
-
 /*
  * Misc
  */
-
-/obj/item/clothing/suit/straight_jacket
-	name = "straight jacket"
-	desc = "A suit that completely restrains the wearer. Manufactured by Antyphun Corp." //Straight jacket is antifun
-	icon_state = "straight_jacket"
-	item_state = "straight_jacket"
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
-	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
-	equip_delay_self = 50
-	strip_delay = 60
-	breakouttime = 3000
-
-/obj/item/clothing/suit/ianshirt
-	name = "worn shirt"
-	desc = "(I) A worn out, curiously comfortable t-shirt with a picture of Ian. You wouldn't go so far as to say it feels like being hugged when you wear it, but it's pretty close. Good for sleeping in."
-	icon_state = "ianshirt"
-	item_state = "ianshirt"
 
 
 /obj/item/clothing/suit/jacket
@@ -186,11 +101,6 @@
 	cold_protection = CHEST|GROIN|ARMS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 
-/obj/item/clothing/suit/jacket/flannel
-	name = "black flannel jacket"
-	desc = "(I) Comfy and supposedly flammable."
-	icon_state = "flannel"
-	item_state = "flannel"
 
 /obj/item/clothing/suit/jacket/flannel/red
 	name = "red flannel jacket"
@@ -224,27 +134,20 @@
 	icon_state = "leathercoat"
 	cold_protection = CHEST|GROIN|ARMS|LEGS
 
-/obj/item/clothing/suit/jacket/puffer
-	name = "puffer jacket"
-	desc = "(I) A thick jacket with a rubbery, water-resistant shell."
-	icon_state = "pufferjacket"
-	item_state = "hostrench"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 5, "rad" = 0, "fire" = 0, "acid" = 0)
-
 /obj/item/clothing/suit/jacket/puffer/vest
 	name = "puffer vest"
-	desc = "(I) A thick vest with a rubbery, water-resistant shell."
+	desc = "A thick fluffy vest that keeps you warm. Keep away from fire."
 	icon_state = "puffervest"
 	item_state = "armor"
 	cold_protection = CHEST|GROIN
-
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = -50, "acid" = 0)
 
 /obj/item/clothing/suit/jacket/miljacket
 	name = "military jacket"
-	desc = "(II) A canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable."
+	desc = "A canvas jacket styled after classical American military garb. Very durable, yet comfortable."
 	icon_state = "militaryjacket"
 	item_state = "militaryjacket"
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 5, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 5, "rad" = 0, "fire" = 5, "acid" = 0)
 
 /obj/item/clothing/suit/jacket/letterman
 	name = "letterman jacket"
@@ -280,121 +183,13 @@
 	item_state = "gothcoat"
 	body_parts_covered = CHEST|ARMS|HAND_LEFT //peculiar
 
-// WINTER COATS
 
-/obj/item/clothing/suit/hooded/wintercoat
-	name = "winter coat"
-	desc = "A heavy jacket made from 'synthetic' animal furs."
-	icon_state = "coatwinter"
-	item_state = "coatwinter"
-	body_parts_covered = CHEST|GROIN|ARMS
-	cold_protection = CHEST|GROIN|ARMS
-	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
-/obj/item/clothing/head/hooded/winterhood
-	name = "winter hood"
-	desc = "A hood attached to a heavy winter jacket."
-	icon_state = "winterhood"
-	body_parts_covered = HEAD
-	cold_protection = HEAD
-	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	flags_inv = HIDEHAIR|HIDEEARS
-	rad_flags = RAD_NO_CONTAMINATE
-
-
-
-
-/obj/item/clothing/suit/hooded/wintercoat/science
-	name = "science winter coat"
-	desc = "(I) A white winter coat with an outdated atomic model instead of a plastic zipper tab."
-	icon_state = "coatscience"
-	item_state = "coatscience"
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/science
-
-/obj/item/clothing/head/hooded/winterhood/science
-	desc = "(I) A white winter coat hood. This one will keep your brain warm. About as much as the others, really."
-	icon_state = "winterhood_science"
-
-/obj/item/clothing/suit/hooded/wintercoat/qm
-	name = "quartermaster's winter coat"
-	desc = "(I) A dark brown winter coat that has a golden crate pin for its zipper pully."
-	icon_state = "coatqm"
-	item_state = "coatqm"
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/qm
-
-/obj/item/clothing/head/hooded/winterhood/qm
-	desc = "(I) A dark brown winter hood"
-	icon_state = "winterhood_qm"
-
-/obj/item/clothing/suit/hooded/wintercoat/aformal
-	name = "assistant's formal winter coat"
-	desc = "(I) A black button up winter coat."
-	icon_state = "coataformal"
-	item_state = "coataformal"
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/aformal
-
-/obj/item/clothing/head/hooded/winterhood/aformal
-	desc = "(I) A black winter coat hood."
-	icon_state = "winterhood_aformal"
-
-
-/obj/item/clothing/suit/hooded/wintercoat/durathread
-	name = "durathread winter coat"
-	desc = "(II) The one coat to rule them all. Extremely durable while providing the utmost comfort."
-	icon_state = "coatdurathread"
-	item_state = "coatdurathread"
-
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/durathread
-
-/obj/item/clothing/suit/hooded/wintercoat/durathread/Initialize()
-	. = ..()
-	allowed = GLOB.security_wintercoat_allowed
-
-/obj/item/clothing/head/hooded/winterhood/durathread
-	icon_state = "winterhood_durathread"
-
-	desc = "(II) The one coat to rule them all. Extremely durable while providing the utmost comfort."
-
-/obj/item/clothing/suit/spookyghost
-	name = "spooky ghost"
-	desc = "(I) This is obviously just a bedsheet, but maybe try it on?"
-	icon_state = "bedsheet"
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS|HEAD
-	user_vars_to_edit = list("name" = "Spooky Ghost", "real_name" = "Spooky Ghost" , "incorporeal_move" = INCORPOREAL_MOVE_BASIC, "appearance_flags" = KEEP_TOGETHER|TILE_BOUND, "alpha" = 150)
-	alternate_worn_layer = ABOVE_BODY_FRONT_LAYER //so the bedsheet goes over everything but fire
-	mutantrace_variation = NONE
 
 /obj/item/clothing/suit/bronze
 	name = "bronze suit"
 	desc = "(I) A big and clanky suit made of bronze that offers no protection and looks very unfashionable. Nice."
 	icon = 'icons/obj/clothing/clockwork_garb.dmi'
 	icon_state = "clockwork_cuirass_old"
-
-
-/obj/item/clothing/suit/ghost_sheet
-	name = "ghost sheet"
-	desc = "(I) The hands float by themselves, so it's extra spooky."
-	icon_state = "ghost_sheet"
-	item_state = "ghost_sheet"
-	throwforce = 0
-	throw_speed = 1
-	throw_range = 2
-	w_class = WEIGHT_CLASS_TINY
-	flags_inv = HIDEGLOVES|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS|HEAD
-	alternate_worn_layer = UNDER_HEAD_LAYER
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
-
-/obj/item/clothing/suit/flakjack
-	name = "flak jacket"
-	desc = "(I) A dilapidated jacket made of a supposedly bullet-proof material (Hint: It isn't.). Smells faintly of napalm."
-	icon_state = "flakjack"
-	item_state = "redtag"
-	blood_overlay_type = "armor"
-	body_parts_covered = CHEST
-	resistance_flags = NONE
-	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/hooded/wintercoat/christmascoatr
 	name = "red christmas coat"
@@ -406,35 +201,7 @@
 /obj/item/clothing/head/hooded/winterhood/christmashoodr
 	icon_state = "christmashoodr"
 
-/obj/item/clothing/suit/hooded/wintercoat/christmascoatrg
-	name = "red and green christmas coat"
-	desc = "(I) A festive red and green Christmas coat! Smells like Candy Cane!"
-	icon_state = "christmascoatrg"
-	item_state = "christmascoatrg"
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/christmashoodrg
 
-/obj/item/clothing/head/hooded/winterhood/christmashoodrg
-	icon_state = "christmashoodrg"
-
-/obj/item/clothing/suit/hooded/wintercoat/polychromic
-	name = "polychromic winter coat"
-	icon_state = "coatpoly"
-	item_state = "coatpoly"
-	hoodtype = /obj/item/clothing/head/hooded/winterhood/polychromic
-
-/obj/item/clothing/suit/hooded/wintercoat/polychromic/ComponentInitialize()
-	. = ..()
-	AddElement(/datum/element/polychromic, list("#6A6964", "#C4B8A6", "#0000FF"), 3)
-
-/obj/item/clothing/head/hooded/winterhood/polychromic
-	icon_state = "winterhood_poly"
-	item_state = "winterhood_poly"
-
-/obj/item/clothing/suit/striped_sweater
-	name = "striped sweater"
-	desc = "(I) Reminds you of someone, but you just can't put your finger on it..."
-	icon_state = "waldo_shirt"
-	item_state = "waldo_shirt"
 
 /obj/item/clothing/suit/toggle/labcoat/fieldscribe
 	name = "fieldscribe suit"
@@ -456,13 +223,7 @@
 	icon_state = "legion-slaveleather"
 	item_state = "legion-slaveleather"
 
-/obj/item/clothing/suit/treasurecloak
-	name = "treasurers cloak"
-	desc = "The grey and black cloak with gold thread trimming shows the wearer is entrusted with matters of money and records."
-	icon = 'icons/obj/clothing/cloaks.dmi'
-	icon_state = "legtrescloak"
-	item_state = "legtrescloak"
-	w_class = WEIGHT_CLASS_SMALL
+
 
 /obj/item/clothing/suit/bomber
 	name = "old bomber jacket"
@@ -499,12 +260,6 @@
 	desc = "Only a monk would find this robe nice and comfortable."
 	icon_state = "robe_liz"
 	item_state = "brownjsuit"
-
-/obj/item/clothing/suit/f13/mantle_liz
-	name = "hide mantle"
-	desc = "A rather grisly selection of cured hides and skin, sewn together to form a ragged mantle."
-	icon_state = "mantle_liz"
-	item_state = "det_suit"
 
 /obj/item/clothing/suit/f13/vest
 	name = "tan vest"
@@ -604,6 +359,46 @@
 	armor = list("melee" = 5, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 // "Funny" Masquerade suits. Keep off the maps.
+
+/obj/item/clothing/suit/spookyghost
+	name = "spooky ghost"
+	desc = "(I) This is obviously just a bedsheet, but maybe try it on?"
+	icon_state = "bedsheet"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS|HEAD
+	user_vars_to_edit = list("name" = "Spooky Ghost", "real_name" = "Spooky Ghost" , "incorporeal_move" = INCORPOREAL_MOVE_BASIC, "appearance_flags" = KEEP_TOGETHER|TILE_BOUND, "alpha" = 150)
+	alternate_worn_layer = ABOVE_BODY_FRONT_LAYER //so the bedsheet goes over everything but fire
+	mutantrace_variation = NONE
+
+/obj/item/clothing/suit/ghost_sheet
+	name = "ghost sheet"
+	desc = "(I) The hands float by themselves, so it's extra spooky."
+	icon_state = "ghost_sheet"
+	item_state = "ghost_sheet"
+	throwforce = 0
+	throw_speed = 1
+	throw_range = 2
+	w_class = WEIGHT_CLASS_TINY
+	flags_inv = HIDEGLOVES|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS|HEAD
+	alternate_worn_layer = UNDER_HEAD_LAYER
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+
+
+/obj/item/clothing/suit/ran
+	name = "shikigami costume"
+	desc = "(I) A costume that looks like a certain shikigami, is super fluffy."
+	icon_state = "ran_suit"
+	item_state = "ran_suit"
+	flags_inv = HIDEJUMPSUIT|HIDETAUR
+	heat_protection = CHEST|GROIN|LEGS //fluffy tails!
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+
+/obj/item/clothing/head/ran
+	name = "shikigami hat"
+	desc = "(I) A hat that looks like it keeps any fluffy ears contained super warm, has little charms over it."
+	icon_state = "ran_hat"
+	item_state = "ran_hat"
+	flags_inv = HIDEEARS
 
 /obj/item/clothing/suit/chickensuit
 	name = "chicken suit"

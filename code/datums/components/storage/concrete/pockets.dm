@@ -44,6 +44,13 @@
 	/obj/item/binoculars,
 	))
 
+/datum/component/storage/concrete/pockets/treasurer
+	max_items = 3
+	can_hold = typecacheof(list(
+	/obj/item/storage/bag/money,
+	/obj/item/key,
+	/obj/item/melee/onehanded/knife,
+	))
 
 /datum/component/storage/concrete/pockets/tiny
 	max_items = 1

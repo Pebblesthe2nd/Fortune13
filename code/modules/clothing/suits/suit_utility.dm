@@ -393,5 +393,89 @@
 
 
 
+/obj/item/clothing/suit/straight_jacket
+	name = "straight jacket"
+	desc = "A suit that completely restrains the wearer."
+	icon_state = "straight_jacket"
+	item_state = "straight_jacket"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HANDS
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
+	equip_delay_self = 50
+	strip_delay = 60
+	breakouttime = 3000
+
+// WINTER COATS
+
+/obj/item/clothing/suit/hooded/wintercoat
+	name = "winter coat"
+	desc = "A heavy jacket made from 'synthetic' animal furs."
+	icon_state = "coatwinter"
+	item_state = "coatwinter"
+	body_parts_covered = CHEST|GROIN|ARMS
+	cold_protection = CHEST|GROIN|ARMS
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
+
+/obj/item/clothing/head/hooded/winterhood
+	name = "winter hood"
+	desc = "A hood attached to a heavy winter jacket."
+	icon_state = "winterhood"
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
+	flags_inv = HIDEHAIR|HIDEEARS
+	rad_flags = RAD_NO_CONTAMINATE
 
 
+
+
+/obj/item/clothing/suit/hooded/wintercoat/science
+	name = "science winter coat"
+	desc = "(I) A white winter coat with an outdated atomic model instead of a plastic zipper tab."
+	icon_state = "coatscience"
+	item_state = "coatscience"
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/science
+
+/obj/item/clothing/head/hooded/winterhood/science
+	desc = "(I) A white winter coat hood. This one will keep your brain warm. About as much as the others, really."
+	icon_state = "winterhood_science"
+
+/obj/item/clothing/suit/hooded/wintercoat/qm
+	name = "quartermaster's winter coat"
+	desc = "(I) A dark brown winter coat that has a golden crate pin for its zipper pully."
+	icon_state = "coatqm"
+	item_state = "coatqm"
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/qm
+
+/obj/item/clothing/head/hooded/winterhood/qm
+	desc = "(I) A dark brown winter hood"
+	icon_state = "winterhood_qm"
+
+/obj/item/clothing/suit/hooded/wintercoat/aformal
+	name = "assistant's formal winter coat"
+	desc = "(I) A black button up winter coat."
+	icon_state = "coataformal"
+	item_state = "coataformal"
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/aformal
+
+/obj/item/clothing/head/hooded/winterhood/aformal
+	desc = "(I) A black winter coat hood."
+	icon_state = "winterhood_aformal"
+
+
+/obj/item/clothing/suit/hooded/wintercoat/durathread
+	name = "durathread winter coat"
+	desc = "(II) The one coat to rule them all. Extremely durable while providing the utmost comfort."
+	icon_state = "coatdurathread"
+	item_state = "coatdurathread"
+
+	hoodtype = /obj/item/clothing/head/hooded/winterhood/durathread
+
+/obj/item/clothing/suit/hooded/wintercoat/durathread/Initialize()
+	. = ..()
+	allowed = GLOB.security_wintercoat_allowed
+
+/obj/item/clothing/head/hooded/winterhood/durathread
+	icon_state = "winterhood_durathread"
+
+	desc = "(II) The one coat to rule them all. Extremely durable while providing the utmost comfort."

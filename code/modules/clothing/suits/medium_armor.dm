@@ -12,26 +12,30 @@
 	item_state = "bonearmor"
 	armor = list("melee" = 45, "bullet" = 15, "laser" = 10, "energy" = 10, "bomb" = 20, "bio" = 5, "rad" = 15, "fire" = 30, "acid" = 0)
 
-/obj/item/clothing/suit/armor/medium/bulletproof
+// Kevlar
+/obj/item/clothing/suit/armor/medium/vestbulletproof
 	name = "bulletproof vest"
-	desc = "Old bulletproof vest with kevlar plates."
+	desc = "Large bulletproof vest with ballistic plates."
 	icon_state = "bulletproof"
 	item_state = "armor"
-	armor = list("melee" = 25, "bullet" = 40, "laser" = 15, "energy" = 15, "bomb" = 25, "bio" = 0, "rad" = 5, "fire" = 15, "acid" = 0)
+	armor = list("melee" = 15, "bullet" = 45, "laser" = 10, "energy" = 10, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = -5)
 
-/obj/item/clothing/suit/armor/medium/combatduster
-	name = "combat duster"
-	desc = "Refurbished combat armor under a weathered duster. Simple metal plates replace the ceramic plates that has gotten damaged."
-	icon_state = "combatduster"
-	item_state = "combatduster"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 25, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 10)
+/obj/item/clothing/suit/armor/medium/vestchinese
+	name = "chinese flak vest"
+	desc = "An uncommon suit of pre-war Chinese armor. It's a very basic and straightforward piece of armor that covers the front of the user."
+	icon_state = "chicom_armor"
+	item_state = "chicom_armor"
+	armor = list("melee" = 20, "bullet" = 35, "laser" = 5, "energy" = 5, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -10)
 
+// Plated medium armor
 /obj/item/clothing/suit/armor/medium/scrapchest
 	name = "scrap metal chestplate"
 	desc = "Various metal bits welded together to form a crude chestplate."
 	icon_state = "metal_chestplate"
 	item_state = "metal_chestplate"
+	siemens_coefficient = 1.3
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
+	slowdown = 0.125
 
 /obj/item/clothing/suit/armor/medium/scrapchest/Initialize()
 	. = ..()
@@ -44,68 +48,20 @@
 
 /obj/item/clothing/suit/armor/medium/scrapchest/reinforced
 	name = "reinforced metal chestplate"
-	desc = "Various metal bits welded together to form a crude chestplate, with extra bits on top of those now. Heavy."
+	desc = "Various metal bits welded together to form a crude chestplate, with extra bits of metal top of the first layer. Heavy."
 	icon_state = "metal_chestplate2"
 	item_state = "metal_chestplate2"
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 20, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
 
-/obj/item/clothing/suit/armor/f13/mutant/metal
+/obj/item/clothing/suit/armor/medium/scrapchest/mutant
 	name = "mutant armour"
-	desc = "An oversized set of metal armour, made to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
+	desc = "Metal plates rigged to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour"
 	item_state = "mutie_metal_armour"
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
 	slowdown = 0.1
 	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/melee/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
-	strip_delay = 40
 
-/obj/item/clothing/suit/armor/f13/combat
-	name = "combat armor"
-	desc = "(V) An old military grade pre war combat armor."
-	icon_state = "combat_armor"
-	item_state = "combat_armor"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 30, "energy" = 35, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
-
-/obj/item/clothing/suit/armor/f13/combat/dark
-	name = "combat armor"
-	desc = "An old military grade pre war combat armor. Now in dark, and extra-crispy!"
-	color = "#514E4E"
-
-/obj/item/clothing/suit/armor/f13/combat/Initialize()
-	. = ..()
-	AddComponent(/datum/component/spraycan_paintable)
-	START_PROCESSING(SSobj, src)
-
-/obj/item/clothing/suit/armor/f13/combat/Destroy()
-	STOP_PROCESSING(SSobj, src)
-	return ..()
-
-/obj/item/clothing/suit/armor/f13/combat/mk2
-	name = "reinforced combat armor"
-	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates."
-	icon = 'icons/obj/clothing/suits.dmi'
-	icon_state = "combat_armor_mk2"
-	item_state = "combat_armor_mk2"
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 35, "energy" = 35, "bomb" = 30, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
-
-/obj/item/clothing/suit/armor/f13/combat/mk2/dark
-	name = "reinforced combat armor"
-	desc = "A reinforced model based of the pre-war combat armor. Now in dark, light, and smoky barbeque!"
-	color = "#302E2E"
-
-/obj/item/clothing/suit/armor/f13/combat/swat
-	name = "SWAT combat armor"
-	desc = "A custom version of the pre-war combat armor, slimmed down and minimalist for domestic S.W.A.T. teams."
-	icon_state = "armoralt"
-	item_state = "armoralt"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
-
-/obj/item/clothing/suit/armor/f13/combatrusted
-	name = "rusted combat armor"
-	desc = "(V) An old military grade pre war combat armor. This set has seen better days, weathered by time. The composite plates look sound and intact still."
-	icon_state = "rusted_combat_armor"
-	item_state = "rusted_combat_armor"
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 20, "energy" = 15, "bomb" = 20, "bio" = 20, "rad" = 10, "fire" = 20, "acid" = 10)
 
 /obj/item/clothing/suit/armor/medium/environmental
 	name = "environmental armor"
@@ -125,6 +81,75 @@
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
 
 
+
+// Combat armor
+/obj/item/clothing/suit/armor/f13/combat
+	name = "combat armor"
+	desc = "Military grade pre-war combat armor."
+	icon_state = "combat_armor"
+	item_state = "combat_armor"
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
+
+/obj/item/clothing/suit/armor/f13/combat/Initialize()
+	. = ..()
+	AddComponent(/datum/component/spraycan_paintable)
+	START_PROCESSING(SSobj, src)
+
+/obj/item/clothing/suit/armor/f13/combat/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+
+/obj/item/clothing/suit/armor/medium/combat/duster
+	name = "combat duster"
+	desc = "Refurbished combat armor under a weathered duster. Simple metal plates replace the ceramic plates that has gotten damaged."
+	icon_state = "combatduster"
+	item_state = "combatduster"
+	permeability_coefficient = 0.9
+	heat_protection = CHEST | GROIN | LEGS
+	cold_protection = CHEST | GROIN | LEGS
+	armor = list("melee" = 30, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 15, "fire" = 25, "acid" = 10)
+
+/obj/item/clothing/suit/armor/f13/combat/dark
+	name = "combat armor"
+	desc = "An old military grade pre war combat armor. Now in dark, and extra-crispy!"
+	color = "#514E4E"
+
+/obj/item/clothing/suit/armor/medium/combat/swat
+	name = "SWAT combat armor"
+	desc = "A custom version of the pre-war combat armor, slimmed down and minimalist for domestic S.W.A.T. teams."
+	icon_state = "armoralt"
+	item_state = "armoralt"
+	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 15, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 25, "acid" = 10)
+
+/obj/item/clothing/suit/armor/medium/combat/rusted
+	name = "rusted combat armor"
+	desc = "Weathered set of combat armor, it has clearly seen use for a long time by various previous owners, judging by the patched holes. The composite plates are a little cracked but it should still work. Probably."
+	icon_state = "rusted_combat_armor"
+	item_state = "rusted_combat_armor"
+	armor = list("melee" = 35, "bullet" = 30, "laser" = 25, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
+
+/obj/item/clothing/suit/armor/medium/combat/raider
+	name = "raider combat armor"
+	desc = "Scavenged military combat armor, repaired with metal plates where the original plating has cracked or crumbled to dust."
+	icon_state = "raider_combat"
+	item_state = "raider_combat"
+	armor = list("melee" = 35, "bullet" = 30, "laser" = 25, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 5)
+
+/obj/item/clothing/suit/armor/medium/combat/mk2
+	name = "reinforced combat armor"
+	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates."
+	icon = 'icons/obj/clothing/suits.dmi'
+	icon_state = "combat_armor_mk2"
+	item_state = "combat_armor_mk2"
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
+
+/obj/item/clothing/suit/armor/medium/combat/mk2dark
+	name = "reinforced combat armor"
+	desc = "A reinforced model based of the pre-war combat armor. Now in dark, light, and smoky barbeque!"
+	color = "#302E2E"
+
+
 ////////////
 // OUTLAW //
 ////////////
@@ -134,28 +159,27 @@
 	desc = "Fabulous mutant powers were revealed to me the day I held aloft my bumper sword and said...<br>BY THE POWER OF NUKA-COLA, I AM RAIDER MAN!"
 	icon_state = "supafly"
 	item_state = "supafly"
-	armor = list("melee" = 25, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 25, "bullet" = 40, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
  
 /obj/item/clothing/suit/armor/medium/rebel
 	name = "rebel raider armor"
 	desc = "Rebel, rebel. Your face is a mess."
 	icon_state = "raider_rebel_icon"
 	item_state = "raider_rebel_armor"
-	armor = list("melee" = 25, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 25, "bullet" = 30, "laser" = 20, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 20)
 
 /obj/item/clothing/suit/armor/medium/sadist
 	name = "sadist raider armor"
 	desc = "A bunch of metal chaps adorned with severed hands at the waist with a leather plate worn on the left shoulder. Very intimidating."
 	icon_state = "sadist"
 	item_state = "sadist"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 30, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 5)
 
 /obj/item/clothing/suit/armor/medium/blastmaster
 	name = "blastmaster raider armor"
 	desc = "A suit composed largely of blast plating, though there's so many holes it's hard to say if it will protect against much."
 	icon_state = "blastmaster"
 	item_state = "blastmaster"
-	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	flash_protect = 2
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 20, "energy" = 25, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 25)
 
@@ -166,25 +190,19 @@
 	item_state = "yankee"
 	armor = list("melee" = 40, "bullet" = 20, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 
-/obj/item/clothing/suit/armor/medium/badlands
-	name = "badlands raider armor"
-	desc = "A leather top with a bandolier over it and a straps that cover the arms."
-	icon_state = "badlands"
-	item_state = "badlands"
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 15, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-
 /obj/item/clothing/suit/armor/medium/painspike
 	name = "painspike raider armor"
 	desc = "A particularly unhuggable armor, even by raider standards. Extremely spiky."
 	icon_state = "painspike"
 	item_state = "painspike"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 10, "energy" = 20, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 5)
 
 /obj/item/clothing/suit/armor/medium/iconoclast
 	name = "iconoclast raider armor"
 	desc = "A rigid armor set that appears to be fashioned from a radiation suit, or a mining suit."
 	icon_state = "iconoclast"
 	item_state = "iconoclast"
+	permeability_coefficient = 0.8
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 25, "energy" = 30, "bomb" = 30, "bio" = 40, "rad" = 60, "fire" = 25, "acid" = 40)
 
 /obj/item/clothing/suit/armor/khan_jacket
@@ -199,7 +217,7 @@
 	desc = "A modified detoriated armor kit consisting of NCR gear and scrap metal."
 	icon_state = "ncrexile"
 	item_state = "ncrexile"
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 20, "fire" = 20, "acid" = 5)
+	armor = list("melee" = 30, "bullet" = 35, "laser" = 30, "energy" = 25, "bomb" = 30, "bio" = 20, "rad" = 20, "fire" = 15, "acid" = 0)
 
 /obj/item/clothing/suit/armor/medium/legexile
 	name = "modified Legion armor"
@@ -213,14 +231,7 @@
 	desc = "A modified detoriated armor kit consisting of brotherhood combat armor and scrap metal."
 	icon_state = "brotherhoodexile"
 	item_state = "brotherhoodexile"
-	armor = list("melee" = 20, "bullet" = 25, "laser" = 30, "energy" = 40, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-
-/obj/item/clothing/suit/armor/medium/raidercombat
-	name = "combat raider armor"
-	desc = "An old military-grade pre-war combat armor. It appears to be fitted with metal plates to replace the crumbling ceramic."
-	icon_state = "raider_combat"
-	item_state = "raider_combat"
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 20, "energy" = 25, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 25, "acid" = 10)
+	armor = list("melee" = 30, "bullet" = 35, "laser" = 35, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
 /obj/item/clothing/suit/hooded/tribaloutcast
 	name = "patched heavy leather cloak"
@@ -246,37 +257,32 @@
 /obj/item/clothing/suit/armor/medium/armoredcoat // For the "Enclave Remnant" loadout of the Outlaws.
 	name = "armored battlecoat"
 	desc = "A heavy padded leather coat with faded colors, usually worn by those who have once considered themselves a part of the US Government. This one has additional armor plating."
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 25, "fire" = 25, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 20, "fire" = 25, "acid" = 5)
 
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
+/obj/item/clothing/suit/armor/medium/khanjacket
 	name = "Great Khan jacket"
-	desc = "A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem."
+	desc = "A leather jacket with hidden metal plate lining and the skull with the fu manchu moustache on the back, the emblem of the Great Khans."
 	icon_state = "khan_jacket"
 	item_state = "jensencoat"
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 15, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+	armor = list("melee" = 35, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 20, "rad" = 0, "fire" = 20, "acid" = 0)
 
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket_armored
-	name = "Great Khan armored jacket"
-	desc = "A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem.<br>Protective plates have been sewn into the jacket."
-	icon_state = "khan_jacket"
-	item_state = "jensencoat"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 
 /obj/item/clothing/suit/armor/medium/slam
 	name = "slammer raider armor"
-	desc = "Crude armor that appears to employ a tire of some kind as the shoulder pad. What appears to be a quilt is tied around the waist.<br>Come on and slam and turn your foes to jam!"
+	desc = "Crude armor using a premium selection of sawn up tires and thick layers of filthy cloth to give that murderous hobo look.<br>Come on and slam and turn your foes to jam! Pretty warm, but it is made of very flammable stuff. It's probably fine."
 	icon_state = "slam"
 	item_state = "slam"
-	armor = list("melee" = 50, "bullet" = 15, "laser" = 0, "energy" = 0, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	flags_inv = HIDEJUMPSUIT
-	icon = 'icons/fallout/clothing/suits.dmi'
+	cold_protection = CHEST | GROIN | LEGS| ARMS | HEAD
+	siemens_coefficient = 0.9
+	armor = list("melee" = 45, "bullet" = 20, "laser" = 0, "energy" = 0, "bomb" = 40, "bio" = 10, "rad" = 10, "fire" = -25, "acid" = 0)
 
 /obj/item/clothing/suit/armor/medium/raider
 	name = "arch-raider armor"
 	desc = "Salvaged military armor rebuilt a dozen times with spikes and chains and such added."
 	icon_state = "combat_armor_raider"
 	item_state = "combat_armor_raider"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 35, "energy" = 35, "bomb" = 30, "bio" = 15, "rad" = 20, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 40, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 5)
 
 
 ////////////
@@ -285,39 +291,33 @@
 
 /obj/item/clothing/suit/armor/medium/forgemaster
 	name = "forgemaster armor"
-	desc = "Armor reinforced with metal, worn with a Forgemaster apron with the bull insignia over it."
+	desc = "Legion armor reinforced with metal, worn with a Forgemaster apron with the bull insignia over it."
 	icon_state = "opifex_apron"
 	item_state = "opifex_apron"
 	blood_overlay_type = "armor"
-	armor = list("melee" = 45, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 40, "acid" = 0)
+	armor = list("melee" = 45, "bullet" = 35, "laser" = 20, "energy" = 20, "bomb" = 30, "bio" = 5, "rad" = 10, "fire" = 45, "acid" = 10)
 
 /obj/item/clothing/suit/armor/medium/vet
 	name = "legion veteran armor"
 	desc = "Armor worn by veteran legionaries who have proven their combat prowess in many battles, its hardened leather is sturdier than that of previous ranks."
 	icon_state = "legvet"
-	armor = list("melee" = 45, "bullet" = 35, "laser" = 20, "energy" = 15, "bomb" = 30, "bio" = 25, "rad" = 20, "fire" = 35, "acid" = 0)
+	armor = list("melee" = 45, "bullet" = 35, "laser" = 20, "energy" = 15, "bomb" = 30, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0)
 	slowdown = 0.075
 
 /obj/item/clothing/suit/armor/medium/vexil
 	name = "legion vexillarius armor"
 	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of circular metal plates attached to the torso, as well as a banner displaying the flag of the Legion worn on the back."
 	icon_state = "legvexil"
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 25, "energy" = 20, "bomb" = 35, "bio" = 25, "rad" = 20, "fire" = 35, "acid" = 0)
+	armor = list("melee" = 45, "bullet" = 40, "laser" = 25, "energy" = 20, "bomb" = 35, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0)
 	slowdown = 0.075
 
-/obj/item/clothing/suit/armor/medium/legioncombat
+/obj/item/clothing/suit/armor/medium/combat/legion
 	name = "Legion combat armor"
 	desc = "An old military grade pre war combat armor and, repainted to the colour scheme of Caesar's Legion."
 	icon_state = "legion_armor"
 	item_state = "legion_armor"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 30, "energy" = 35, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
-/obj/item/clothing/suit/armor/medium/legioncombatmk2
-	name = "reinforced Legion combat armor"
-	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of Caesar's Legion."
-	icon_state = "legion_armor_mk2"
-	item_state = "legion_armor_mk2"
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 35, "energy" = 35, "bomb" = 30, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
 
 
 /////////
@@ -326,91 +326,84 @@
 
 /obj/item/clothing/suit/armor/medium/ncrarmor
 	name = "NCR armor vest"
-	desc = "A standard issue NCR Infantry vest."
+	desc = "A standard issue NCR Infantry armor vest."
 	icon_state = "ncr_infantry_vest"
 	item_state = "ncr_infantry_vest"
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 20, "bio" = 0, "rad" = 10, "fire" = 20, "acid" = 5)
+	armor = list("melee" = 20, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 20, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 5)
 
 /obj/item/clothing/suit/armor/medium/ncrarmormant
 	name = "NCR mantle vest"
 	desc = "A standard issue NCR Infantry vest with a mantle on the shoulder."
 	icon_state = "ncr_standard_mantle"
 	item_state = "ncr_standard_mantle"
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 15, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 20, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 15, "fire" = 15, "acid" = 10)
 
 /obj/item/clothing/suit/armor/medium/ncrarmorreinf
 	name = "NCR reinforced armor vest"
 	desc = "A standard issue NCR Infantry vest reinforced with a groinpad."
 	icon_state = "ncr_reinforced_vest"
 	item_state = "ncr_reinforced_vest"
-	armor = list("melee" = 25, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 0, "rad" = 10, "fire" = 20, "acid" = 5)
+	armor = list("melee" = 25, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 0, "rad" = 10, "fire" = 15, "acid" = 5)
 
 /obj/item/clothing/suit/armor/medium/ncrarmormantreinf
 	name = "NCR reinforced mantle vest"
 	desc = "A standard issue NCR Infantry vest reinforced with a groinpad and a mantle."
 	icon_state = "ncr_reinforced_mantle"
 	item_state = "ncr_reinforced_mantle"
-	armor = list("melee" = 25, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 10, "rad" = 15, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 25, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 10, "rad" = 15, "fire" = 20, "acid" = 10)
 
 /obj/item/clothing/suit/armor/medium/ncrarmorofficer
 	name = "NCR officer armor vest"
 	desc = "A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
 	icon_state = "ncr_lt_armour"
 	item_state = "ncr_lt_armour"
-	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 30, "bomb" = 30, "bio" = 10, "rad" = 25, "fire" = 35, "acid" = 15)
+	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 30, "bomb" = 30, "bio" = 10, "rad" = 25, "fire" = 25, "acid" = 15)
 
 /obj/item/clothing/suit/armor/medium/ncrarmorofficer/captain
-	name = "NCR captains armor"
+	name = "NCR captain´s armor"
 	desc = "The captain gets to wear a non-regulation coat over his armor because he is in charge, and don't you forget it."
 	icon_state = "ncr_officer_coat"
 	item_state = "ncr_officer_coat"
 
-/obj/item/clothing/suit/armor/medium/ncrcombat
+/obj/item/clothing/suit/armor/medium/combat/ncr
 	name = "NCR combat armor"
-	desc = "An old military grade pre war combat armor and, repainted to the colour scheme of the New California Republic."
+	desc = "Combat armor painted in the khaki of the New California Republic, displaying its flag on the chest."
 	icon_state = "ncr_armor"
 	item_state = "ncr_armor"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 30, "energy" = 35, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
-
-/obj/item/clothing/suit/armor/medium/ncrcombatmk2
-	name = "reinforced NCR combat armor"
-	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design. This one is kitted with additional plates and, repainted to the colour scheme of the New California Republic."
-	icon_state = "ncr_armor_mk2"
-	item_state = "ncr_armor_mk2"
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 35, "energy" = 35, "bomb" = 30, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
 /obj/item/clothing/suit/armor/medium/ncrarmorcolonel
 	name = "NCR colonels armor"
-	desc = "A heavily reinforced set of NCR mantle armour, the armor has been heavily patched and given ceramic inserts in vital areas to protect the wearer. The design indicates it belongs to a high ranking NCR officer."
+	desc = "A heavily reinforced set of NCR mantle armour, ceramic inserts protects the vital organs quite well. Used by high ranking NCR officers in dangerous zones."
 	icon_state = "ncr_captain_armour"
 	item_state = "ncr_captain_armour"
-	armor = list("melee" = 45, "bullet" = 50, "laser" = 40, "energy" = 40, "bomb" = 50, "bio" = 40, "rad" = 50, "fire" = 70, "acid" = 20)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 40, "energy" = 40, "bomb" = 45, "bio" = 40, "rad" = 45, "fire" = 45, "acid" = 20)
 
-/obj/item/clothing/suit/armor/f13/combat/ncr_patrol
+/obj/item/clothing/suit/armor/medium/combat/ncrranger
 	name = "ranger patrol armor"
-	desc = "A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	desc = "The standard issue ranger patrol armor is based on pre-war combat armor design, and has similar capabilities."
 	icon_state = "ncr_patrol"
 	item_state = "ncr_patrol"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 30, "energy" = 35, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
 
 //////////////////////////
 // BROTHERHOOD OF STEEL //
 //////////////////////////
 
-/obj/item/clothing/suit/armor/medium/boscombat
+/obj/item/clothing/suit/armor/medium/combat/bos
 	name = "initiate armor"
 	desc = "An old military grade pre war combat armor, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor"
 	item_state = "brotherhood_armor"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 30, "energy" = 35, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
-/obj/item/clothing/suit/armor/medium/boscombatmk2
+/obj/item/clothing/suit/armor/medium/combatmk2/bos
 	name = "reinforced initiate armor"
 	desc = "A reinforced set of bracers, greaves, and torso plating of prewar design This one is kitted with additional plates and, repainted to the colour scheme of the Brotherhood of Steel."
 	icon_state = "brotherhood_armor_mk2"
 	item_state = "brotherhood_armor_mk2"
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 35, "energy" = 35, "bomb" = 30, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
 
 ////////////////
@@ -419,7 +412,7 @@
 
 /obj/item/clothing/suit/armor/medium/lawcoat
 	name = "deputy trenchcoat"
-	desc = "An armored trench coat with added shoulderpads, a chestplate, and legguards."
+	desc = "An armored trench coat with added shoulderpads, a chestplate, and leg guards."
 	icon_state = "towntrench_medium"
 	item_state = "hostrench"
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 50, "acid" = 10)
@@ -440,12 +433,12 @@
 // WAYFARERS //
 ///////////////
 
-/obj/item/clothing/suit/armor/medium/tribal_combat_armor
+/obj/item/clothing/suit/armor/medium/combat/tribal
 	name = "tribal combat armor"
 	desc = "Military grade pre war combat armor, now decorated with sinew and the bones of the hunted for its new wearer."
 	icon_state = "tribecombatarmor"
 	item_state = "tribecombatarmor"
-	armor = list("melee" = 35, "bullet" = 40, "laser" = 30, "energy" = 35, "bomb" = 25, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
 /obj/item/clothing/suit/armor/medium/tribe_heavy_armor
 	name = "heavy tribal armor"
@@ -525,12 +518,14 @@
 //THE GRAVEYARD
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
 
-/obj/item/clothing/suit/armor/f13/combat/chinese
-	name = "chinese combat armor"
-	desc = "An uncommon suit of pre-war Chinese combat armor. It's a very basic and straightforward piece of armor that covers the front of the user."
-	icon_state = "chicom_armor"
-	item_state = "chicom_armor"
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 10)
+
+/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket_armored
+	name = "Great Khan armored jacket"
+	desc = "A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem.<br>Protective plates have been sewn into the jacket."
+	icon_state = "khan_jacket"
+	item_state = "jensencoat"
+	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
+
 
 /obj/item/clothing/suit/armor/f13/marlowsuit //Raider armour reskin.
 	name = "Marlow gang overcoat"
@@ -560,7 +555,7 @@
 	desc = "A set of matte black advanced pre-war combat armor."
 	icon_state = "enclave_new"
 	item_state = "enclave_new"
-	armor = list("melee" = 35, "bullet" = 45, "laser" = 35, "energy" = 35, "bomb" = 30, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 40, "laser" = 35, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
 /obj/item/clothing/suit/armor/f13/enclave/armorvest
 	name = "armored vest"
