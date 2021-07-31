@@ -8,7 +8,7 @@
 //Dusters
 /obj/item/clothing/suit/armor/light/duster
 	name = "duster"
-	desc = "A long brown leather overcoat.<br>A powerful accessory of fearsome bounty hunter."
+	desc = "A long brown leather overcoat with discrete reinforcements hunter."
 	icon_state = "duster"
 	item_state = "det_suit"
 	permeability_coefficient = 0.9
@@ -52,31 +52,31 @@
 	armor = list("melee" = 15, "bullet" = 15, "laser" = 25, "energy" = 20, "bomb" = 15, "bio" = 10, "rad" = 5, "fire" = 25, "acid" = 5)
 
 // Restored Kevlar
-/obj/item/clothing/suit/armor/light/vestflak
+/obj/item/clothing/suit/armor/light/vest/flak
 	name = "ancient flak vest"
 	desc = "Poorly maintained, this patched vest will still still stop some bullets, but don't expect any miracles."
 	icon_state = "vestflak"
 	item_state = "vestflak"
-	armor = list("melee" = 0, "bullet" = 35, "laser" = 0, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -10)
+	armor = list("melee" = 0, "bullet" = 35, "laser" = 0, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -25)
 
-/obj/item/clothing/suit/armor/light/vestkevlar
+/obj/item/clothing/suit/armor/light/vest/kevlar
 	name = "kevlar vest"
 	desc = "Worn but serviceable, the vest is is effective against ballistic impacts."
 	icon_state = null
 	item_state = "vestkevlar"
-	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 0, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -10)
+	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 0, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -15)
 
-/obj/item/clothing/suit/armor/light/vestfollowers
-	name = "followers trenchcoat"
-	desc = "A trenchcoat in light colors with the markings of the Followers, under it there is a bullet-proof vest."
+/obj/item/clothing/suit/armor/light/vest/followers
+	name = "followers armor vest"
+	desc = "A coat in light colors with the markings of the Followers, concealing a bullet-proof vest."
 	icon_state = "followerstrench"
 	item_state = "followerstrench"
-	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 0, "bomb" = 5, "bio" = 10, "rad" = 0, "fire" = 5, "acid" = -5)
+	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 0, "bomb" = 5, "bio" = 10, "rad" = 0, "fire" = 5, "acid" = -10)
 
 // Mixed
 /obj/item/clothing/suit/armor/light/samurai
 	name = "wasteland samurai armor"
-	desc = "a mad attempt to recreate armor based of images of japanese samurai, using a sawn up old car tire as shoulder pads, bits of chain to cover the hips and pieces of furniture for a breastplate."
+	desc = "a mad attempt to recreate armor based of images of japanese samurai, using a sawn up old car tire as shoulder pads, bits of chain to cover the hips and pieces of furniture for a breastplate. Might stop a blade but nothing else."
 	icon_state = "samurai"
 	item_state = "samurai"
 	armor = list("melee" = 25, "bullet" = 5, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
@@ -90,7 +90,7 @@
 	heat_protection = CHEST | GROIN | LEGS | ARMS
 	cold_protection = CHEST | GROIN | LEGS | ARMS
 	permeability_coefficient = 0.5
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 40, "acid" = 10,)
+	armor = list("melee" = 23, "bullet" = 20, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 10, "rad" = 10, "fire" = 40, "acid" = 10,)
 
 /obj/item/clothing/suit/armor/light/chitinarmor
 	name = "insect chitin armor"
@@ -104,13 +104,13 @@
 	permeability_coefficient = 0.5
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 20, "energy" = 20, "bomb" = 15, "bio" = 50, "rad" = 50, "fire" = 70, "acid" = 80)
 
-/obj/item/clothing/suit/armor/light/tribal
-	name = "tribal armor"
-	desc = "Soft armor made from layered dog hide strips glued together."
+/obj/item/clothing/suit/armor/light/wastetribe
+	name = "wasteland tribe armor"
+	desc = "Soft armor made from layered dog hide strips glued together, with some metal bits here and there."
 	icon_state = "tribal"
 	item_state = "tribal"
 	flags_inv = HIDEJUMPSUIT
-	armor = list("melee" = 20, "bullet" = 5, "laser" = 10, "energy" = 10, "bomb" = 5, "bio" = 0, "rad" = 5, "fire" = 5, "acid" = 0)
+	armor = list("melee" = 22, "bullet" = 5, "laser" = 10, "energy" = 10, "bomb" = 5, "bio" = 0, "rad" = 5, "fire" = 5, "acid" = 0)
 
 /obj/item/clothing/suit/armor/light/vaquero
 	name = "vaquero suit"
@@ -139,7 +139,7 @@
 	item_state = "badlands"
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets
 	heat_protection = CHEST | GROIN | LEGS| ARMS | HEAD
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 15, "energy" = 15, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 28, "bullet" = 24, "laser" = 12, "energy" = 10, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 15, "acid" = 5)
 
 // Plated small armor
 /obj/item/clothing/suit/armor/light/punk
@@ -165,7 +165,7 @@
 	desc = "Tanned hide boiled in corn oil gives a hard but brittle material to make crude armor plating from. Made in a similar style to pre-war motorcyle football gear, this armor provides a decent defense against impacts."
 	icon_state = "leather_armor_2"
 	item_state = "leather_armor_2"
-	armor = list("melee" = 25, "bullet" = 20, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0)
+	armor = list("melee" = 25, "bullet" = 18, "laser" = 10, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0)
 
 // Leather armor
 /obj/item/clothing/suit/armor/light/leatherarmor
