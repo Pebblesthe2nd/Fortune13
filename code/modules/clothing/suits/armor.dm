@@ -69,11 +69,14 @@
 		var/tier_ar = round(round_armor / 10) // Tier 7 would be 200/100 = 20, Tier 11 = 40
 		durability_threshold = tier_ar
 
-// Plates are good against melee and ballistics equally, bad vs energy lasers
-// Leather/soft armor is good vs melee and lasers, bad vs bullets
+// Metal- Melee, Laser Good, Ballistics Moderate, Energy, Explosion bad
+// Leather/soft armor: Melee Good, Laser , Energy, Explosion Moderate, Ballistic Bad
 // Coat style armor is good for allround protection but excels at none. (note plated with unarmored duster over is still plated.)
-// Kevlar is great vs bullets and bad vs everything else, the synthetic fabric melts terribly when exposed to acid
-// Mix can vary wildly but usually has some glaring strongpoints and weakspots
+// Kevlar: Ballistic Good, all others Bad.
+// Mix can vary wildly but usually has some glaring strongpoints and weakspots.
+// Combat armor is allround but not top defense against any single category.
+// Thick warm armor gives cold protection, piecemeal gives overheating protection.
+// Armor covering much of the body gives more defense vs acid, fire, bio in general and vice versa.
 
 //Suits. 0-10 in its primary value, slowdown 0, various utility
 /obj/item/clothing/suit

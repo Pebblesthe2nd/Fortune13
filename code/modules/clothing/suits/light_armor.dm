@@ -8,19 +8,19 @@
 //Dusters
 /obj/item/clothing/suit/armor/light/duster
 	name = "duster"
-	desc = "A long brown leather overcoat with discrete reinforcements hunter."
+	desc = "A long brown leather overcoat with discrete protective reinforcements sown into the lining."
 	icon_state = "duster"
-	item_state = "det_suit"
+	item_state = "duster"
 	permeability_coefficient = 0.9
-	heat_protection = CHEST | GROIN | LEGS
-	cold_protection = CHEST | GROIN | LEGS
-	armor = list("melee" = 15, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 5, "fire" = 20, "acid" = 5)
+	heat_protection = CHEST | GROIN
+	cold_protection = CHEST | GROIN
+	armor = list("melee" = 15, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 20, "rad" = 0, "fire" = 20, "acid" = 5)
 
 /obj/item/clothing/suit/armor/light/duster/lonesome
 	name = "lonesome duster"
 	desc = "A blue leather coat with the number 21 on the back.<br><i>If war doesn't change, men must change, and so must their symbols.</i><br><i>Even if there is nothing at all, know what you follow.</i>"
 	icon_state = "courier"
-	item_state = "suit-command"
+	item_state = "courier"
 	armor = list("melee" = 25, "bullet" = 30, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 10, "rad" = 15, "fire" = 20, "acid" = 10)
 
 /obj/item/clothing/suit/armor/light/duster/autumn //Based of Colonel Autumn's uniform.
@@ -28,7 +28,7 @@
 	desc = "A heavy-duty tan trenchcoat typically worn by pre-War generals."
 	icon_state = "autumn"
 	item_state = "autumn"
-	armor = list("melee" = 15, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 5, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 0, "fire" = 15, "acid" = 5)
 
 /obj/item/clothing/suit/armor/light/duster/battlecoat
 	name = "battlecoat"
@@ -49,36 +49,36 @@
 	desc = "A duster fashioned with tanned brahmin hide. It appears to be more durable than a normal duster. The leather is laser resistant."
 	icon_state = "brahmin_leather_duster"
 	item_state = "brahmin_leather_duster"
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 25, "energy" = 20, "bomb" = 15, "bio" = 10, "rad" = 5, "fire" = 25, "acid" = 5)
+	armor = list("melee" = 15, "bullet" = 15, "laser" = 25, "energy" = 20, "bomb" = 15, "bio" = 10, "rad" = 0, "fire" = 25, "acid" = 5)
 
 // Restored Kevlar
 /obj/item/clothing/suit/armor/light/vest/flak
 	name = "ancient flak vest"
-	desc = "Poorly maintained, this patched vest will still still stop some bullets, but don't expect any miracles."
+	desc = "Poorly maintained, this patched vest will still still stop some bullets, but don't expect any miracles. The polyester does not go well with acid unless you want to be covered in boiling plastic."
 	icon_state = "vestflak"
 	item_state = "vestflak"
-	armor = list("melee" = 0, "bullet" = 35, "laser" = 0, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -25)
+	armor = list("melee" = 0, "bullet" = 35, "laser" = 0, "energy" = 0, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -50)
 
 /obj/item/clothing/suit/armor/light/vest/kevlar
 	name = "kevlar vest"
 	desc = "Worn but serviceable, the vest is is effective against ballistic impacts."
 	icon_state = null
 	item_state = "vestkevlar"
-	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 0, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = -15)
+	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 0, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/armor/light/vest/followers
 	name = "followers armor vest"
 	desc = "A coat in light colors with the markings of the Followers, concealing a bullet-proof vest."
-	icon_state = "followerstrench"
-	item_state = "followerstrench"
-	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 0, "bomb" = 5, "bio" = 10, "rad" = 0, "fire" = 5, "acid" = -10)
+	icon_state = "vest-follower"
+	item_state = "vest-follower"
+	armor = list("melee" = 10, "bullet" = 35, "laser" = 5, "energy" = 0, "bomb" = 5, "bio" = 10, "rad" = 0, "fire" = 5, "acid" = 0)
 
 // Mixed
-/obj/item/clothing/suit/armor/light/samurai
-	name = "wasteland samurai armor"
+/obj/item/clothing/suit/armor/light/wastewar
+	name = "wasteland warrior armor"
 	desc = "a mad attempt to recreate armor based of images of japanese samurai, using a sawn up old car tire as shoulder pads, bits of chain to cover the hips and pieces of furniture for a breastplate. Might stop a blade but nothing else."
-	icon_state = "samurai"
-	item_state = "samurai"
+	icon_state = "wastewar"
+	item_state = "wastewar"
 	armor = list("melee" = 25, "bullet" = 5, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/suit/armor/light/rustedcowboy

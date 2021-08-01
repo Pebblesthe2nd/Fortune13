@@ -329,35 +329,35 @@
 	desc = "A standard issue NCR Infantry armor vest."
 	icon_state = "ncr_infantry_vest"
 	item_state = "ncr_infantry_vest"
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 20, "bio" = 0, "rad" = 10, "fire" = 10, "acid" = 5)
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0)
 
 /obj/item/clothing/suit/armor/medium/ncrarmormant
 	name = "NCR mantle vest"
 	desc = "A standard issue NCR Infantry vest with a mantle on the shoulder."
 	icon_state = "ncr_standard_mantle"
 	item_state = "ncr_standard_mantle"
-	armor = list("melee" = 20, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 20, "bio" = 10, "rad" = 15, "fire" = 15, "acid" = 10)
+	armor = list("melee" = 15, "bullet" = 35, "laser" = 15, "energy" = 10, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 5)
 
 /obj/item/clothing/suit/armor/medium/ncrarmorreinf
 	name = "NCR reinforced armor vest"
 	desc = "A standard issue NCR Infantry vest reinforced with a groinpad."
 	icon_state = "ncr_reinforced_vest"
 	item_state = "ncr_reinforced_vest"
-	armor = list("melee" = 25, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 0, "rad" = 10, "fire" = 15, "acid" = 5)
+	armor = list("melee" = 20, "bullet" = 40, "laser" = 15, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0)
 
 /obj/item/clothing/suit/armor/medium/ncrarmormantreinf
 	name = "NCR reinforced mantle vest"
 	desc = "A standard issue NCR Infantry vest reinforced with a groinpad and a mantle."
 	icon_state = "ncr_reinforced_mantle"
 	item_state = "ncr_reinforced_mantle"
-	armor = list("melee" = 25, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 10, "rad" = 15, "fire" = 20, "acid" = 10)
+	armor = list("melee" = 20, "bullet" = 40, "laser" = 15, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 5)
 
 /obj/item/clothing/suit/armor/medium/ncrarmorofficer
 	name = "NCR officer armor vest"
 	desc = "A reinforced set of NCR mantle armour, with added padding on the groin, neck and shoulders. Intended for use by the officer class."
 	icon_state = "ncr_lt_armour"
 	item_state = "ncr_lt_armour"
-	armor = list("melee" = 30, "bullet" = 45, "laser" = 35, "energy" = 30, "bomb" = 30, "bio" = 10, "rad" = 25, "fire" = 25, "acid" = 15)
+	armor = list("melee" = 25, "bullet" = 45, "laser" = 15, "energy" = 10, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 5)
 
 /obj/item/clothing/suit/armor/medium/ncrarmorofficer/captain
 	name = "NCR captain´s armor"
@@ -370,7 +370,7 @@
 	desc = "Combat armor painted in the khaki of the New California Republic, displaying its flag on the chest."
 	icon_state = "ncr_armor"
 	item_state = "ncr_armor"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 15, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 15, "acid" = 10)
 
 /obj/item/clothing/suit/armor/medium/ncrarmorcolonel
 	name = "NCR colonels armor"
@@ -415,18 +415,18 @@
 	desc = "An armored trench coat with added shoulderpads, a chestplate, and leg guards."
 	icon_state = "towntrench_medium"
 	item_state = "hostrench"
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 50, "acid" = 10)
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 40, "acid" = 5)
 
 /obj/item/clothing/suit/armor/medium/lawcoat/sheriff
 	name = "sheriff trenchcoat"
-	desc = "A trenchcoat which does not attempt to hide the full-body combat armor beneath it."
+	desc = "A trenchcoat which does a poor job at hiding the full-body combat armor beneath it."
 	icon_state = "towntrench_heavy"
-	armor = list("melee" = 45, "bullet" = 45, "laser" = 35,  "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 70, "acid" = 0)
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 35,  "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
 
 /obj/item/clothing/suit/armor/medium/lawcoat/mayor
 	name = "mayor trenchcoat"
 	desc = "A symbol of the mayor's authority (or lack thereof)."
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 0)
+	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 40, "acid" = 0)
 
 
 ///////////////
