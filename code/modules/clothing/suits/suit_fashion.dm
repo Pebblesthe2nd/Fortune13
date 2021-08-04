@@ -429,7 +429,7 @@
 	item_state = "cardborg"
 	flags_inv = HIDEJUMPSUIT
 	dog_fashion = /datum/dog_fashion/back
-
+/* uncomment when old system cleaned out
 /obj/item/clothing/suit/cardborg/equipped(mob/living/user, slot)
 	..()
 	if(slot == SLOT_WEAR_SUIT)
@@ -448,3 +448,4 @@
 			I.override = 1
 			I.add_overlay(mutable_appearance('icons/mob/robots.dmi', "robot_e")) //gotta look realistic
 			add_alt_appearance(/datum/atom_hud/alternate_appearance/basic/silicons, "standard_borg_disguise", I) //you look like a robot to robots! (including yourself because you're totally a robot)
+*/

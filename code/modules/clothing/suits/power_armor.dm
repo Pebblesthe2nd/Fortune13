@@ -1,5 +1,5 @@
 
-
+/* Temp commented out due to clash with old system
 
 //Power armors, including salvaged and faction
 
@@ -20,18 +20,20 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	var/emped = 0
-	var/requires_training = TRUE
-	var/powered = TRUE
-	var/armor_block_chance = 0 //Chance for the power armor to block a low penetration projectile
+	repair_kit = /obj/item/repair_kit/pa
 	protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+
 	var/deflection_chance = 0 //Chance for the power armor to redirect a blocked projectile
 	var/armor_block_threshold = 0.3 //projectiles below this will deflect
 	var/melee_block_threshold = 30
 	var/dmg_block_threshold = 42
 	var/powerLevel = 7000
 	var/powerMode = 3
-	repair_kit = /obj/item/repair_kit/pa
+	var/emped = 0
+	var/requires_training = TRUE
+	var/powered = TRUE
+	var/armor_block_chance = 0 //Chance for the power armor to block a low penetration projectile
+
 
 /obj/item/fusion_fuel
 	name = "fusion fuel cell"
@@ -352,3 +354,5 @@
 			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
+
+*/

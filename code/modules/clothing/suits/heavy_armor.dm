@@ -5,7 +5,7 @@
 // WASTELAND //
 ///////////////
 
-/obj/item/clothing/suit/armor/medium/environmental
+/obj/item/clothing/suit/armor/heavy/environmental
 	name = "environmental armor"
 	desc = "Developed for use in heavily contaminated environments, this suit is prized in the Wasteland for its ability to protect against biological threats."
 	icon_state = "environmental_armor"
@@ -29,7 +29,7 @@
 	desc = "Heavy armor with ballistic inserts, sewn into a padded riot police coat."
 	armor = list("melee" = 70, "bullet" = 45, "laser" = 20, "energy" = 20, "bomb" = 40, "bio" = 35, "rad" = 25, "fire" = 50, "acid" = 10)
 
-/obj/item/clothing/suit/armor/f13/rangercombat/eliteriot
+/obj/item/clothing/suit/armor/heavy/eliteriot
 	name = "elite riot gear"
 	desc = "A heavily reinforced set of military grade armor, commonly seen in the Divide now repurposed and reissued to Chief Rangers."
 	icon_state = "elite_riot"
@@ -37,7 +37,7 @@
 	armor = list("melee" = 70, "bullet" = 60, "laser" = 40, "energy" = 35, "bomb" = 45, "bio" = 40, "rad" = 30, "fire" = 50, "acid" = 0)
 	icon = 'icons/fallout/clothing/suits.dmi'
 
-/obj/item/clothing/suit/armor/f13/rangercombat/desert
+/obj/item/clothing/suit/armor/heavy/desert
 	name = "desert ranger combat armor"
 	desc = "This is the original armor the NCR Ranger Combat armor was based off of. An awe inspiring suit of armor used by the legendary Desert Rangers."
 	icon_state = "desert_ranger"
@@ -59,14 +59,14 @@
 	item_state = "raider_metal"
 	armor = list("melee" = 65, "bullet" = 40, "laser" = 35, "energy" = 25, "bomb" = 30, "bio" = 30, "rad" = 25, "fire" = 30, "acid" = 20)
 
-/obj/item/clothing/suit/armor/f13/mutant/metal/reinforced
+/obj/item/clothing/suit/armor/heavy/mutantmetal
 	name = "mutant armour"
 	desc = "An oversized boiler plate, hammered to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
 	icon_state = "mutie_metal_armour_mk2"
 	item_state = "mutie_metal_armour_mk2"
 	armor = list("melee" = 60, "bullet" = 45, "laser" = 25, "energy" = 20, "bomb" = 50, "bio" = 20, "rad" = 30, "fire" = 25, "acid" = 15)
 	slowdown = 0.15
-	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/melee/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 	strip_delay = 50
 
 /obj/item/clothing/suit/armor/heavy/tesla
@@ -135,7 +135,7 @@
 	icon_state = "tribal_power_armor"
 	item_state = "tribal_power_armor"
 	armor = list("melee" = 65, "bullet" = 65, "laser" = 45, "energy" = 40, "bomb" = 45, "bio" = 30, "rad" = 30, "fire" = 60, "acid" = 10)
-	allowed = list(obj/item/twohanded, /obj/item/melee/onehanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
+	allowed = list(/obj/item/twohanded, /obj/item/melee/onehanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 
 
 /////////
@@ -172,16 +172,3 @@
 	desc = "A superior combat armor set made by the Brotherhood of Steel, standard issue for all Knight-Captains. It bears golden embroidery."
 	icon_state = "brotherhood_armor_captain"
 	item_state = "brotherhood_armor_captain"
-
-
-//obsolete
-/obj/item/clothing/suit/armor/f13/rangercombat/eliteriot
-/obj/item/clothing/suit/armor/f13/rangercombat/desert
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/captain
-/obj/item/clothing/suit/armor/f13/combat/brotherhood/senior
-/obj/item/clothing/suit/armor/f13/combat/brotherhood
-/obj/item/clothing/suit/armor/f13/battlecoat/tan/enclave
-/obj/item/clothing/suit/armor/f13/wayfarer/tribal_pa
-/obj/item/clothing/suit/armor/f13/rangercombat
-/obj/item/clothing/suit/armor/f13/leather_jacket/combat/riotpolice
-/obj/item/clothing/suit/armor/f13/sulphitearmor
