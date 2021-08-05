@@ -192,12 +192,6 @@
 	item_state = "legexile"
 	armor = list("melee" = 45, "bullet" = 30, "laser" = 20, "energy" = 15, "bomb" = 30, "bio" = 25, "rad" = 20, "fire" = 35, "acid" = 0)
 
-/obj/item/clothing/suit/armor/medium/bosexile
-	name = "modified Brotherhood armor"
-	desc = "A modified detoriated armor kit consisting of brotherhood combat armor and scrap metal."
-	icon_state = "brotherhoodexile"
-	item_state = "brotherhoodexile"
-	armor = list("melee" = 30, "bullet" = 35, "laser" = 35, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
 /obj/item/clothing/suit/armor/medium/armoredcoat
 	name = "armored battlecoat"
@@ -246,22 +240,22 @@
 /obj/item/clothing/suit/armor/medium/vet
 	name = "legion veteran armor"
 	desc = "Armor worn by veteran legionaries who have proven their combat prowess in many battles, its hardened leather is sturdier than that of previous ranks."
-	icon_state = "legvet"
+	icon_state = "legion_veteran"
 	armor = list("melee" = 45, "bullet" = 30, "laser" = 20, "energy" = 15, "bomb" = 30, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0)
 	slowdown = 0.075
 
 /obj/item/clothing/suit/armor/medium/vexil
 	name = "legion vexillarius armor"
 	desc = "The armor appears to be based off of a suit of Legion veteran armor, with the addition of circular metal plates attached to the torso, as well as a banner displaying the flag of the Legion worn on the back."
-	icon_state = "legvexil"
+	icon_state = "legion_vex"
 	armor = list("melee" = 45, "bullet" = 35, "laser" = 25, "energy" = 20, "bomb" = 35, "bio" = 5, "rad" = 5, "fire" = 35, "acid" = 0)
 	slowdown = 0.075
 
 /obj/item/clothing/suit/armor/medium/combat/legion
 	name = "Legion combat armor"
 	desc = "An old military grade pre war combat armor and, repainted to the colour scheme of Caesar's Legion."
-	icon_state = "legion_armor"
-	item_state = "legion_armor"
+	icon_state = "legion_combat"
+	item_state = "legion_combat"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
 
@@ -332,6 +326,13 @@
 	item_state = "ncr_patrol"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
+/obj/item/clothing/suit/armor/medium/combat/vetranger
+	name = "veteran ranger combat armor"
+	desc = "The NCR veteran ranger combat armor, or black armor consists of a pre-war L.A.P.D. riot suit under a duster with rodeo jeans. Considered one of the most prestigious suits of armor to earn and wear while in service of the NCR Rangers."
+	icon_state = "ranger"
+	item_state = "ranger"
+	armor = list("melee" = 45, "bullet" = 45, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 10, "rad" = 20, "fire" = 35, "acid" = 10)
+
 
 //////////////////////////
 // BROTHERHOOD OF STEEL //
@@ -389,11 +390,6 @@
 	icon_state = "towntrench_heavy"
 	armor = list("melee" = 45, "bullet" = 45, "laser" = 35,  "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 50, "acid" = 10)
 
-/obj/item/clothing/suit/armor/medium/lawcoat/mayor
-	name = "mayor trenchcoat"
-	desc = "A symbol of the mayor's authority (or lack thereof)."
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 40, "acid" = 0)
-
 
 ///////////////
 // WAYFARERS //
@@ -406,77 +402,43 @@
 	item_state = "tribecombatarmor"
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
 
-/obj/item/clothing/suit/armor/medium/tribe_heavy_armor
-	name = "heavy tribal armor"
-	desc = "Heavy armor make of thick leather and pieces of scrap metal. Worn by seasoned veterans within the Wayfinder tribe."
-	icon_state = "heavy_tribal_armor"
-	item_state = "heavy_tribal_armor"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 10, "rad" = 20, "fire" = 30, "acid" = 20)
-	flags_inv = HIDEJUMPSUIT
-
 
 ////////////
 // CUSTOM //
 ////////////
 
 /obj/item/clothing/suit/armor/medium/combat/cloak_armored
-	name = "tribal combat armor"
-	desc = "Mixxxxr."
-	icon_state = "trxx"
-	item_state = "trixxxxr"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 20, "bomb" = 25, "bio" = 10, "rad" = 10, "fire" = 20, "acid" = 10)
-
-/obj/item/clothing/suit/armor/f13/herbertranger
-	name = "weathered desert ranger armor"
-	desc = "A set of pre-unification desert ranger armor, made using parts of what was once USMC riot armor. It looks as if it has been worn for decades; the coat has become discoloured from years under the Mojave sun and has multiple tears and bullet holes in its leather. The armor plating itself seems to be in relatively good shape, though it could do with some maintenance."
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	icon_state = "usmc_riot_gear"
-	item_state = "usmc_riot_gear"
-	armor = list("melee" = 45, "bullet" = 30, "laser" = 10, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-	strip_delay = 40
+	name = "armored cloak"
+	desc = "A dark cloak worn over protective plating."
+	icon_state = "cloak_armored"
+	item_state = "cloak_armored"
+	armor = list("melee" = 25, "bullet" = 35, "laser" = 20, "energy" = 15, "bomb" = 20, "bio" = 5, "rad" = 10, "fire" = 25, "acid" = 5)
 
 /obj/item/clothing/suit/armor/medium/scrapchest/mutant
 	name = "mutant armour"
 	desc = "Metal plates rigged to fit the frame of a super mutant. Maybe he's the big iron with a ranger on his hip?"
-	icon_state = "mutie_metal_armour"
-	item_state = "mutie_metal_armour"
+	icon_state = "mutie_heavy_metal"
+	item_state = "mutie_heavy_metal"
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 5, "fire" = 10, "acid" = 0)
 	slowdown = 0.1
 	allowed = list(/obj/item/gun, /obj/item/melee/onehanded, /obj/item/twohanded, /obj/item/melee/smith, /obj/item/melee/smith/twohand)
 
+/obj/item/clothing/suit/armor/medium/motorball
+	name = "motorball suit"
+	desc = "Reproduction motorcycle-football suit, made in vault 75 that was dedicated to a pure sports oriented culture."
+	icon_state = "motorball"
+	item_state = "motorball"
+	armor = list("melee" = 40, "bullet" = 25, "laser" = 15, "energy" = 15, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 40, "acid" = 10)
 
 //THE GRAVEYARD
 //IF PUT BACK INTO USE, PLEASE FILE IT BACK SOMEWHERE ABOVE
 
 /*
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket_armored
-	name = "Great Khan armored jacket"
-	desc = "A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem.<br>Protective plates have been sewn into the jacket."
-	icon_state = "khan_jacket"
-	item_state = "jensencoat"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 15, "energy" = 35, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 
-
-/obj/item/clothing/suit/armor/f13/marlowsuit //Raider armour reskin.
-	name = "Marlow gang overcoat"
-	desc = "A heavy raw buckskin overcoat littered with aged bullet holes and frays from regular wear-and-tear."
-	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	icon_state = "marlowsuit"
-	item_state = "marlowsuit"
-	armor = list("melee" = 30, "bullet" = 25, "laser" = 10, "energy" = 15, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
-	strip_delay = 40
-
-/obj/item/clothing/suit/armor/f13/marlowsuit/ikesuit
-	name = "gunfighter's overcoat"
-	desc = "A thick double-breasted red leather overcoat worn through with scattered tears and bullet holes."
-	icon_state = "ikesuit"
-	item_state = "ikesuit"
-
-/obj/item/clothing/suit/armor/f13/marlowsuit/masonsuit
-	name = "vagabond's vest"
-	desc = "A padded thick red leather vest, coated in stitched pockets and other mends."
-	icon_state = "masonsuit"
-	item_state = "masonsuit"
+/obj/item/clothing/suit/armor/medium/lawcoat/mayor
+	name = "mayor trenchcoat"
+	desc = "A symbol of the mayor's authority (or lack thereof)."
+	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 30, "bio" = 40, "rad" = 40, "fire" = 40, "acid" = 0)
 
 //Enclave/Remnants
 
@@ -500,26 +462,4 @@
 	icon_state = "armor_enclave_officer"
 	item_state = "armor_enclave_officer"
 	armor = list("melee" = 60, "bullet" = 45, "energy" = 40, "bomb" = 10, "bio" = 0, "rad" = 0, "fire" = 10, "acid" = 0)
-
-
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket
-	name = "Great Khan jacket"
-	desc = "(IV) A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem."
-	icon_state = "khan_jacket"
-	item_state = "jensencoat"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 25, "fire" = 25, "acid" = 5)
-
-/obj/item/clothing/suit/toggle/labcoat/f13/khan_jacket_armored
-	name = "Great Khan armored jacket"
-	desc = "(V) A black leather jacket. <br>There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns.<br>The skull has a mongoloid moustache - it's obviously a Great Khans emblem.<br>Protective plates have been sewn into the jacket."
-	icon_state = "khan_jacket"
-	item_state = "jensencoat"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 25, "fire" = 25, "acid" = 5)
-
-/obj/item/clothing/suit/toggle/labcoat/f13/khan/battlecoat
-	name = "Great Khan battle coat"
-	desc = "(V) A dark red leather coat lined with a patchwork of metal plates and padding on the inside. The back is dominated by a burning skull adorned with a horned helmet; the symbol of the Khans."
-	icon_state = "khan_battlecoat"
-	item_state = "khan_battlecoat"
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 15, "rad" = 25, "fire" = 25, "acid" = 5)
 */

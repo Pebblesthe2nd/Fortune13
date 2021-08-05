@@ -173,7 +173,7 @@
 /obj/item/clothing/suit/hooded/outcast
 	name = "patched heavy leather cloak"
 	desc = "A robust cloak made from layered gecko skin patched with various bits of leather from dogs and other animals, able to absorb more force than one would expect from leather."
-	icon = 'icons/fallout/objects/clothing/armored_light.dmi'
+	icon = 'icons/fallout/clothing/armored_light.dmi'
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/armor_light.dmi'
 	icon_state = "cloak_outcast"
 	item_state = "cloak_outcast"
@@ -232,8 +232,7 @@
 
 /obj/item/clothing/suit/armor/light/leather
 	name = "leather armor"
-	desc = "Before the war motorcycle-football was one of the largest specator sports in America. This armor copies the style of armor used by the players, </br>
-	using leather boiled in corn oil to make hard sheets to emulate the light weight and toughness of the original polymer armor."
+	desc = "Before the war motorcycle-football was one of the largest specator sports in America. This armor copies the style of armor used by the players,	using leather boiled in corn oil to make hard sheets to emulate the light weight and toughness of the original polymer armor."
 	icon_state = "leather_armor"
 	item_state = "leather_armor"
 	armor = list("melee" = 23, "bullet" = 18, "laser" = 12, "energy" = 5, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 5, "acid" = 0)
@@ -257,7 +256,7 @@
 	armor = list("melee" = 20, "bullet" = 15, "laser" = 15, "energy" = 5, "bomb" = 5, "bio" = 5, "rad" = 0, "fire" = 15, "acid" = 5)
 
 /obj/item/clothing/suit/armor/light/leather_jacket
-	name = "leather jacket"
+	name = "bouncer jacket"
 	icon_state = "leather_jacket_fighter"
 	item_state = "leather_jacket_fighter"
 	desc = "A very stylish pre-War black, heavy leather jacket. Not always a good choice to wear this the scorching sun of the desert, and one of the arms has been torn off"
@@ -332,7 +331,7 @@
 /////////
 
 //Recipe bulletproof vest + duster, ranger recipe 
-/obj/item/clothing/suit/toggle/armor/f13/rangerrecon
+/obj/item/clothing/suit/toggle/armor/ranger_duster
 	name = "ranger recon duster"
 	desc = "A light bulletproof vest under a high-quality duster. Popular with Rangers."
 	icon_state = "duster_recon"
@@ -375,7 +374,7 @@
 
 /obj/item/clothing/suit/armor/light/tribal/simple
 	name = "simple tribal armor"
-	desc = "Armor made of leather stips and a large, flat piece of turquoise. The wearer is displaying the Wayfinders traditional garb."
+	desc = "Armor made of leather strips and a large, flat piece of turquoise. The wearer is displaying the Wayfinders traditional garb."
 	icon_state = "tribal_armor"
 	item_state = "tribal_armor"
 	armor = list("melee" = 30, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 5, "rad" = 5, "fire" = 20, "acid" = 0)
@@ -457,8 +456,8 @@
 	armor = list("melee" = 15, "bullet" = 25, "laser" = 10, "energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /*
-
-/obj/item/clothing/suit/armor/f13/atomzealot
+// Heavy
+/obj/item/clothing/suit/armor/f13/atomzealot 
 	name = "zealot armor"
 	desc = "Praise be to Atom."
 	icon_state = "atomzealot"
@@ -487,24 +486,6 @@
 	icon_state = "palacent_excess"
 	item_state = "palacent_excess"
 
-/obj/item/clothing/suit/armor/f13/rangercombat/foxcustom
-	name = "sniper riot gear"
-	desc = "A customized and well-worn suit of riot gear with parts of the suit reinforced with leather armor and slain Centurion armor pieces by the wearer. A sniper's veil is wrapped around the neck."
-	icon_state = "foxranger"
-	item_state = "foxranger"
-
-/obj/item/clothing/suit/armor/f13/rangercombat/rigscustom
-	name = "11th armored calvary armor"
-	desc = "A suit of special military grade riot control gear and a duster, worn by 11th Armored Calvary Regiment members in The Divide before the war. Yellow markings are painted on the shoulderpads and forearm guards."
-	icon_state = "rigscustom_suit"
-	item_state = "rigscustom_suit"
-
-/obj/item/clothing/suit/armor/f13/raider/combatduster/patrolduster
-	name = "Patrol Duster"
-	desc = "What appears to be an NCR patrol ranger's armor under a green tinted duster. The armor itself looks much more well kept then the duster itself, said duster looking somewhat faded. On the back of the duster, is a symbol of a skull with an arrow piercing through the eye."
-	icon_state = "patrolduster"
-	item_state = "patrolduster"
-    armor = list("melee" = 30, "bullet" = 35, "laser" = 20, "energy" = 25, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 25, "acid" = 25)
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/thax 
 	name = "modified patrol armor"
 	desc = "A customized and moderately-worn suit of patrol ranger armor. A sun-worn thick olive duster is worn over the armor."

@@ -159,17 +159,7 @@
 			return BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return
 
-/obj/item/clothing/suit/armor/f13/power_armor/t45b
-	name = "salvaged T-45b power armor"
-	desc = "It's a set of early-model T-45 power armor with a custom air conditioning module and stripped out servomotors. Bulky and slow, but almost as good as the real thing."
-	icon_state = "t45bpowerarmor"
-	item_state = "t45bpowerarmor"
-	armor = list("melee" = 65, "bullet" = 70, "laser" = 55, "energy" = 45, "bomb" = 45, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 10, "wound" = 30)
-	requires_training = FALSE
-	slowdown = 1.40
-	armor_block_chance = 25
-	powered = FALSE
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
+
 
 /obj/item/clothing/suit/armor/f13/power_armor/t45b/restored
 	name = "restored T-45b power armor"
@@ -179,42 +169,6 @@
 	slowdown = 0.24
 	armor_block_chance = 60
 	deflection_chance = 10 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
-
-/obj/item/clothing/suit/armor/f13/power_armor/ncr
-	powered = FALSE
-	name = "salvaged NCR power armor"
-	desc = "It's a set of T-45b power armor with a air conditioning module installed, it however lacks servomotors to enhance the users strength. This one has brown paint trimmed along the edge and a two headed bear painted onto the chestplate."
-	icon_state = "ncrpowerarmor"
-	item_state = "ncrpowerarmor"
-	armor = list("melee" = 65, "bullet" = 70, "laser" = 55, "energy" = 45, "bomb" = 45, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 10, "wound" = 30)
-	requires_training = FALSE
-	slowdown = 0.4
-	armor_block_chance = 40
-	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
-
-/obj/item/clothing/suit/armor/f13/power_armor/raiderpa
-	powered = FALSE
-	name = "raider T-45b power armor"
-	desc = "It's a set of T-45b power armor with some of its plating heavily reconditioned. This set has seen better days, metal scrap has been spot welded to the chassis "
-	icon_state = "raiderpa"
-	item_state = "raiderpa"
-	armor = list("melee" = 65, "bullet" = 70, "laser" = 55, "energy" = 45, "bomb" = 45, "bio" = 60, "rad" = 30, "fire" = 60, "acid" = 10, "wound" = 30)
-	slowdown = 0.4
-	requires_training = FALSE
-	armor_block_chance = 20
-	deflection_chance = 10 //5% chance to block damage from blockable bullets and redirect the bullet at a random angle. Stripped down version of an already stripped down version
-
-/obj/item/clothing/suit/armor/f13/power_armor/hotrod
-	powered = FALSE
-	name = "hotrod T-45b power armor"
-	desc = "It's a set of T-45b power armor with a with some of its plating removed. This set has exhaust pipes piped to the pauldrons, flames erupting from them."
-	icon_state = "t45hotrod"
-	item_state = "t45hotrod"
-	armor = list("melee" = 65, "bullet" = 65, "laser" = 45, "energy" = 40, "bomb" = 45, "bio" = 50, "rad" = 25, "fire" = 80, "acid" = 15, "wound" = 25)
-	slowdown = 0.4
-	requires_training = FALSE
-	armor_block_chance = 20
-	deflection_chance = 10 //5% chance to block damage from blockable bullets and redirect the bullet at a random angle. Stripped down version of an already stripped down version
 
 /obj/item/clothing/suit/armor/f13/power_armor/vaulttec
 	name = "Vault-Tec power armour"
